@@ -1,0 +1,8 @@
+h1 {
+  color: red;
+}
+@media (max-width: 991.98px) {
+  h1 {
+    color: rgb(54, 45, 45);
+  }
+}
