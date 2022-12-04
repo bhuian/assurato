@@ -199,6 +199,116 @@ button {
 // ============================
 .assurato {
 // ------- Navbar Sec ---------
+.nav-bar{
+  // top app bar
+  .top-appbar{
+    border-bottom: .5px solid var(--primary-color);
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+    .nav-items{
+      display: flex;
+      justify-content: end;
+      margin: 0;
+      padding: 0;
+      .nav-item{
+
+        .link{
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: var(--smaller-font-size);
+          padding-top: 15px;
+          padding-bottom: 15px;
+          display: inline-block;
+          width: 100%;
+          &:hover{
+            color:#507fff;
+          }
+          svg{
+            margin-left: 4px;
+          }
+        }
+        &.sub-menu{
+          z-index: 99;
+         position: relative;
+          .nav-items{
+            display: none;
+            position: absolute;
+            top: 44px;
+            left: 0;
+            min-width: 130px;
+            background:#ffff;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            .nav-item{
+              .link{
+                padding: 12px 15px;
+                &:hover{
+                  background: var(--primary-color);
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+          &:hover{
+            .nav-items{
+              display: block;
+
+            }
+          }
+        }
+      }
+    }
+  }
+  // app bar
+  .appbar{
+    .appbar-area{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .nav-brand{
+        display: flex;
+        align-items: center;
+        img{
+          width: 26.11px;
+          height: 25.91px;
+          margin-right: 5px;
+        }
+
+      }
+      .nav-bar{
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
+        svg{
+          color: var(--primary-color);
+          width: 23px;
+          height: 16px;
+
+        }
+      }
+      .nav-items{
+        display: flex;
+        // display: none;
+        .nav-item{
+          .link{
+            padding: 10px 15px;
+            margin-left: 2px;
+            transition: all .3s ease-in-out;
+            &.active,
+            &:hover{
+              background:var(--primary-color);
+              color: var(--white-color);
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
 
 // ------- Footer Sec ---------
 .footer{

@@ -212,6 +212,99 @@ button:focus {
     max-width: 1320px;
   }
 }
+.assurato .nav-bar .top-appbar {
+  border-bottom: 0.5px solid var(--primary-color);
+}
+@media (max-width: 991.98px) {
+  .assurato .nav-bar .top-appbar {
+    display: none;
+  }
+}
+.assurato .nav-bar .top-appbar .nav-items {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+}
+.assurato .nav-bar .top-appbar .nav-items .nav-item .link {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: var(--smaller-font-size);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+}
+.assurato .nav-bar .top-appbar .nav-items .nav-item .link:hover {
+  color: #507fff;
+}
+.assurato .nav-bar .top-appbar .nav-items .nav-item .link svg {
+  margin-left: 4px;
+}
+.assurato .nav-bar .top-appbar .nav-items .nav-item.sub-menu {
+  z-index: 99;
+  position: relative;
+}
+.assurato .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items {
+  display: none;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  min-width: 130px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.assurato .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items .nav-item .link {
+  padding: 12px 15px;
+}
+.assurato .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items .nav-item .link:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+.assurato .nav-bar .top-appbar .nav-items .nav-item.sub-menu:hover .nav-items {
+  display: block;
+}
+.assurato .nav-bar .appbar .appbar-area {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.assurato .nav-bar .appbar .appbar-area .nav-brand {
+  display: flex;
+  align-items: center;
+}
+.assurato .nav-bar .appbar .appbar-area .nav-brand img {
+  width: 26.11px;
+  height: 25.91px;
+  margin-right: 5px;
+}
+.assurato .nav-bar .appbar .appbar-area .nav-bar {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .assurato .nav-bar .appbar .appbar-area .nav-bar {
+    display: none;
+  }
+}
+.assurato .nav-bar .appbar .appbar-area .nav-bar svg {
+  color: var(--primary-color);
+  width: 23px;
+  height: 16px;
+}
+.assurato .nav-bar .appbar .appbar-area .nav-items {
+  display: flex;
+}
+.assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link {
+  padding: 10px 15px;
+  margin-left: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link.active, .assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
 .assurato .footer {
   background: #124B75;
   padding-top: 83px;
