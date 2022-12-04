@@ -215,11 +215,6 @@ button:focus {
 .assurato .nav-bar .top-appbar {
   border-bottom: 0.5px solid var(--primary-color);
 }
-@media (max-width: 991.98px) {
-  .assurato .nav-bar .top-appbar {
-    display: none;
-  }
-}
 .assurato .nav-bar .top-appbar .nav-items {
   display: flex;
   justify-content: end;
@@ -249,7 +244,7 @@ button:focus {
   display: none;
   position: absolute;
   top: 44px;
-  left: 0;
+  right: -10px;
   min-width: 130px;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -269,6 +264,7 @@ button:focus {
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 .assurato .nav-bar .appbar .appbar-area .nav-brand {
   display: flex;
@@ -279,31 +275,55 @@ button:focus {
   height: 25.91px;
   margin-right: 5px;
 }
-.assurato .nav-bar .appbar .appbar-area .nav-bar {
+.assurato .nav-bar .appbar .appbar-area .bars {
   display: flex;
   align-items: center;
 }
 @media (min-width: 992px) {
-  .assurato .nav-bar .appbar .appbar-area .nav-bar {
+  .assurato .nav-bar .appbar .appbar-area .bars {
     display: none;
   }
 }
-.assurato .nav-bar .appbar .appbar-area .nav-bar svg {
+.assurato .nav-bar .appbar .appbar-area .bars svg {
   color: var(--primary-color);
   width: 23px;
   height: 16px;
 }
 .assurato .nav-bar .appbar .appbar-area .nav-items {
   display: flex;
+  padding: 0;
+}
+@media (max-width: 991.98px) {
+  .assurato .nav-bar .appbar .appbar-area .nav-items {
+    flex-direction: column;
+    flex-basis: 100%;
+    display: none;
+  }
 }
 .assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link {
   padding: 10px 15px;
   margin-left: 2px;
   transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 .assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link.active, .assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link:hover {
   background: var(--primary-color);
   color: var(--white-color);
+}
+@media (max-width: 991.98px) {
+  .assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link {
+    width: 100%;
+  }
+  .assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link.active, .assurato .nav-bar .appbar .appbar-area .nav-items .nav-item .link:hover {
+    background: none;
+    color: rgb(2, 68, 211);
+    font-weight: 600;
+  }
+}
+@media (max-width: 991.98px) {
+  .assurato .nav-bar .appbar.show .nav-items {
+    display: block;
+  }
 }
 .assurato .footer {
   background: #124B75;
