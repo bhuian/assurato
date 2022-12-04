@@ -1,8 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Almarai:wght@300;400&display=swap");
+:root {
+  --primary-color: #4770e5;
+  --secondary-color: #3aafc3;
+  --success-color: #27ae60;
+  --danger-color: #eb5757;
+  --warning-color: #e2b93b;
+  --info-color: #2f80ed;
+  --light-color: #e5f4f7;
+  --dark-color: #001233;
+  --gray-100: #000000;
+  --gray-200: #5c677d;
+  --gray-300: #7d8597;
+  --gray-400: #979dac;
+  --gray-500: #c5c8d0;
+  --gray-600: #e5e6e9;
+  --gray-700: #fafafa;
+  --white-color: #ffffff;
+  --body-color: #fafafa;
+  --body-font: "Almarai", sans-serif;
+  --heading-font: "Alata", sans-serif;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 600;
+  --normal-font-size: 15px;
+  --small-font-size: 14px;
+  --smaller-font-size: 13px;
+}
+@media screen and (min-width: 992px) {
+  :root {
+    --normal-font-size: 16px;
+    --small-font-size: 15px;
+    --smaller-font-size: 14px;
+  }
+}
+
+*::-moz-selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+body {
+  margin: 0;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--gray-400);
+  background-color: var(--body-color);
+  letter-spacing: -0.009em;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--gray-100);
+  font-weight: 400;
+  font-family: var(--heading-font);
+}
+
+.h1,
 h1 {
-  color: red;
+  font-size: 62px;
 }
 @media (max-width: 991.98px) {
-  h1 {
-    color: rgb(54, 45, 45);
+  .h1,
+h1 {
+    font-size: 40;
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.bg-primary {
+  background: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background: var(--secondary-color) !important;
+}
+
+.bg-success {
+  background: var(--success-color) !important;
+}
+
+.bg-danger {
+  background: var(--danger-color) !important;
+}
+
+.bg-warning {
+  background: var(--warning-color) !important;
+}
+
+.bg-info {
+  background: var(--info-color) !important;
+}
+
+.bg-light {
+  background: var(--light-color) !important;
+}
+
+.bg-dark {
+  background: var(--dark-color) !important;
+}
+
+.d-none {
+  display: none;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+.assurato .footer {
+  background: #124B75;
+  padding-top: 83px;
+  padding-bottom: 83px;
+}
+.assurato .footer .footer-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .assurato .footer .footer-area {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.assurato .footer .footer-area .footer-item {
+  order: 1;
+}
+.assurato .footer .footer-area .footer-item.brand-footer {
+  margin-bottom: 32px;
+}
+@media (min-width: 992px) {
+  .assurato .footer .footer-area .footer-item.brand-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: auto;
+    height: 216px;
+  }
+}
+.assurato .footer .footer-area .footer-item:last-child ul:last-child {
+  padding-bottom: 0px;
+}
+.assurato .footer .footer-area .footer-item ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  padding-bottom: 3px;
+}
+@media (min-width: 992px) {
+  .assurato .footer .footer-area .footer-item ul {
+    align-items: flex-start;
+  }
+}
+.assurato .footer .footer-area .footer-item ul li {
+  color: var(--white-color);
+  line-height: 19px;
+}
+.assurato .footer .footer-area .footer-item ul li .link {
+  color: var(--white-color);
+  transition: all 0.3s ease-in;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.assurato .footer .footer-area .footer-item ul li .link:hover {
+  color: var(--gray-500);
+}
+.assurato .footer .footer-area .footer-item.social-icon ul {
+  flex-direction: row;
+}
+@media (max-width: 991.98px) {
+  .assurato .footer .footer-area .footer-item.social-icon ul .text {
+    display: none;
+  }
+}
+.assurato .footer .footer-area .footer-item.social-icon ul .footer-icon {
+  font-size: 20px;
+  display: none;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+@media (max-width: 991.98px) {
+  .assurato .footer .footer-area .footer-item.social-icon ul .footer-icon {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .assurato .footer .footer-area .footer-item.social-icon ul {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .assurato .footer .footer-area .footer-item:nth-child(1) {
+    order: 0;
+  }
+  .assurato .footer .footer-area .footer-item:nth-child(5) {
+    order: 0;
   }
 }

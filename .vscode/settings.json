@@ -3,5 +3,6 @@
         "format": "expanded",
         "extensionName": ".css",
         "savePath": "./assets/css"
-    }]
+    }],
+    "editor.formatOnSave": false,
 }

@@ -1,12 +1,310 @@
 @import "./media_queries/include-media";
 
-
-
-
-h1{
-    color: red;
-    @include media-breakpoint-down(lg) {
-        color: rgb(54, 45, 45);
-    }
-    
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Almarai:wght@300;400&display=swap");
+:root {
+  // main color
+  --primary-color: #4770e5;
+  --secondary-color: #3aafc3;
+  --success-color: #27ae60;
+  --danger-color: #eb5757;
+  --warning-color: #e2b93b;
+  --info-color: #2f80ed;
+  --light-color: #e5f4f7;
+  --dark-color: #001233;
+  // gray-color
+  --gray-100: #000000;
+  --gray-200: #5c677d;
+  --gray-300: #7d8597;
+  --gray-400: #979dac;
+  --gray-500: #c5c8d0;
+  --gray-600: #e5e6e9;
+  --gray-700: #fafafa;
+  --white-color: #ffffff;
+  --body-color: #fafafa;
+  --body-font: "Almarai", sans-serif;
+  --heading-font: "Alata", sans-serif;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 600;
+  // fontSize
+  --normal-font-size: 15px;
+  --small-font-size: 14px;
+  --smaller-font-size: 13px;
+  @media screen and (min-width: 992px) {
+    --normal-font-size: 16px;
+    --small-font-size: 15px;
+    --smaller-font-size: 14px;
+  }
 }
+
+// selection
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+// custrom Scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--gray-400);
+  background-color: var(--body-color);
+  letter-spacing: -0.009em;
+}
+p {
+  margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--gray-100);
+  font-weight: 400;
+  font-family: var(--heading-font);
+}
+.h1,
+h1 {
+  font-size: 62px;
+  @include media-breakpoint-down(lg) {
+    font-size: 40;
+  }
+} 
+button {
+  border: none;
+  outline: none;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.p-5 {
+  padding: 3rem;
+}
+.bg-primary {
+  background: var(--primary-color) !important;
+}
+.bg-secondary {
+  background: var(--secondary-color) !important;
+}
+
+.bg-success {
+  background: var(--success-color) !important;
+}
+.bg-danger {
+  background: var(--danger-color) !important;
+}
+.bg-warning {
+  background: var(--warning-color) !important;
+}
+.bg-info {
+  background: var(--info-color) !important;
+}
+.bg-light {
+  background: var(--light-color) !important;
+}
+.bg-dark {
+  background: var(--dark-color) !important;
+}
+.d-none {
+  display: none;
+}
+// ============================
+// ********* Container ********
+// ============================
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+
+// ============================
+// ******* Main SCSS ********
+// ============================
+.assurato {
+// ------- Navbar Sec ---------
+
+// ------- Footer Sec ---------
+.footer{
+    background: #124B75;
+    padding-top: 83px;
+    padding-bottom: 83px;
+ 
+    .footer-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .footer-item{
+            &.brand-footer{
+                margin-bottom: 32px;
+                @include media-breakpoint-up(lg) {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: auto;
+                    height:216px;
+
+                }
+                
+            }
+
+            order: 1;
+            &:last-child{     
+                ul{          
+                    &:last-child{
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+                padding-bottom: 3px;
+                @include media-breakpoint-up(lg) {
+                    align-items: flex-start;
+                }
+                
+               
+
+                li{
+                    color: var(--white-color);
+                    line-height: 19px;
+                    .link{
+                        color: var(--white-color);
+                        transition: all .3s ease-in;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        display: inline-block;
+                        &:hover{
+                            color: var(--gray-500);
+                        }
+                    }
+                }
+            }
+            &.social-icon{
+                ul{
+                    flex-direction: row;
+                    .text{
+                        @include media-breakpoint-down(lg) {
+                            display: none;
+                        }
+                        
+                    }
+                    .footer-icon{
+                        font-size: 20px;
+                        display: none;
+                        padding-left: 11px;
+                        padding-right: 11px;
+                        @include media-breakpoint-down(lg) {
+                            display: block;
+                        }
+                        
+                    }
+                    @include media-breakpoint-up(lg) {
+                        flex-direction: column;
+                    }
+                    
+                }
+
+            }
+            @include media-breakpoint-up(lg) {
+                &:nth-child(1){
+                    order: 0;
+                }    
+                &:nth-child(5){
+                    order: 0;
+                }
+            }
+            
+            
+          
+            
+        }
+    }
+}
+
+}
+
