@@ -54,7 +54,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 5px;
 }
 
@@ -73,7 +73,7 @@ body {
   margin: 0;
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
-  color: var(--gray-400);
+  color: var(--gray-100);
   background-color: var(--body-color);
   letter-spacing: -0.009em;
 }
@@ -110,7 +110,7 @@ h1 {
 @media (max-width: 991.98px) {
   .h1,
 h1 {
-    font-size: 40;
+    font-size: 40px;
   }
 }
 
@@ -211,6 +211,32 @@ button:focus {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
+}
+.assurato .login-screen .banner {
+  padding: 30px 0 100px 0;
+}
+@media (max-width: 991.98px) {
+  .assurato .login-screen .banner {
+    padding: 20px 0 70px 0;
+  }
+}
+.assurato .login-screen .banner .banner-area {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .assurato .login-screen .banner .banner-area {
+    width: 60%;
+    text-align: start;
+  }
+}
+.assurato .login-screen .banner .banner-area .title {
+  margin-bottom: 55px;
+  color: var(--primary-color);
+}
+.assurato .login-screen .banner .banner-area .dis {
+  margin-bottom: 20px;
 }
 .assurato .nav-bar .top-appbar {
   border-bottom: 0.5px solid var(--primary-color);

@@ -53,7 +53,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 5px;
 }
 *,
@@ -72,7 +72,7 @@ body {
   margin: 0;
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
-  color: var(--gray-400);
+  color: var(--gray-100);
   background-color: var(--body-color);
   letter-spacing: -0.009em;
 }
@@ -101,7 +101,7 @@ h6 {
 h1 {
   font-size: 62px;
   @include media-breakpoint-down(lg) {
-    font-size: 40;
+    font-size: 40px;
   }
 } 
 button {
@@ -198,6 +198,32 @@ button {
 // ******* Main SCSS ********
 // ============================
 .assurato {
+  .login-screen{
+    .banner{
+      padding: 30px 0 100px 0;
+      @include media-breakpoint-down(lg) {
+        padding: 20px 0 70px 0;
+      }
+      
+      .banner-area{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+          width: 60%;
+          text-align: start;
+
+        }
+        .title{
+          margin-bottom: 55px;
+          color: var(--primary-color);
+        }
+        .dis{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
 // ------- Navbar Sec ---------
 .nav-bar{
   // top app bar
