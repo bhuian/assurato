@@ -20,7 +20,7 @@
   --gray-600: #e5e6e9;
   --gray-700: #fafafa;
   --white-color: #ffffff;
-  --body-color: #fafafa;
+  --body-color: #ffffff;
   --body-font: "Almarai", sans-serif;
   --heading-font: "Alata", sans-serif;
   --light: 300;
@@ -291,6 +291,11 @@ button {
       padding-top: 30px;
       padding-bottom: 30px;
       flex-wrap: wrap;
+      background: rgb(255, 255, 255);
+      @include media-breakpoint-down(lg) {
+        position: relative;
+      }
+      
       .nav-brand{
         display: flex;
         align-items: center;
@@ -321,6 +326,10 @@ button {
               flex-direction: column;
               flex-basis: 100%;
               display: none;
+              background-color: #ffffff;
+              position: absolute;
+              width: 100%;
+              top: 71px;
       }
         .nav-item{
           .link{
@@ -355,7 +364,126 @@ button {
 
   }
 }
+// ------- login-med Section ------
+.login-med-main{
+  margin-bottom: 93px;
+  .login-med-area{
+    // hreader
+   .login-med-header{
+    @include media-breakpoint-down(lg) {
+      position: relative;
+    .login-med-header-btns.show{
+      display: block;
+    }
+    }
+    
+.login-med-header-top{
+  height: 55px;
+  background:rgba(232, 249, 252, 1) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    background:rgba(218, 233, 236, 1) ;
+  }
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  
+  cursor: pointer;
+  .login-med-select{
+    margin-right: 5px;
+  }
+  svg{
+    font-size: 10px;
+  }
+  &:hover{
+    background:rgba(218, 233, 236, 1) ;
+  }
+}
+.login-med-header-btns{
+ 
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    width: 100%;
+    top: 57px;
+    display: none;
+  }
+  
+  ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+    
+    li{
+      background:rgba(232, 249, 252, 1) ;
+      padding-top: 22px;
+      padding-bottom: 24px;
+      width: 100%;
+      text-align: center;
+      border-right:1px solid var(--primary-color) ;
+      cursor: pointer;
+      @include media-breakpoint-down(lg) {
+        border: none;
+      }
+      
+      &:last-child{
+        border-right: none;
+      }
+      &.active{
+        background:rgba(218, 233, 236, 1) ;
+      }
+      &:hover{
+        background:rgba(218, 233, 236, 1) ;
+      }
+    }
+  }
+}
+   } 
+  //  Footer
+  .login-med-footer{
+    margin-top: 39px;
+    display: none;
+    &.show{
+      display: block;
+    }
+    .login-med-footer-area{
+      display: flex;
+      gap: 18px;
+      .left{
+        width: 100%;
+      
+        img{
+          @include media-breakpoint-down(lg) {
+            width: 100%;
+          }
+          
+        }
+      }
+      .right{
+        background: #F7F7F7;
+        height: 432px;
+        padding: 42px 13px 42px 28px;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+        
+        .text{
+          margin-bottom: 24px;
 
+        }
+      }
+    }
+  }
+
+  }
+}
 // ------- Footer Sec ---------
 .footer{
     background: #124B75;
