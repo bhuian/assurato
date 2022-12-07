@@ -198,6 +198,7 @@ button {
 // ******* Main SCSS ********
 // ============================
 .assurato {
+
   .login-screen{
     .banner{
       padding: 30px 0 100px 0;
@@ -209,6 +210,8 @@ button {
         display: flex;
         flex-direction: column;
         text-align: center;
+        margin-top: 215px;
+    
         @include media-breakpoint-up(lg) {
           width: 60%;
           text-align: start;
@@ -225,143 +228,146 @@ button {
     }
   }
 // ------- Navbar Sec ---------
-.nav-bar{
-  // top app bar
-  .top-appbar{
-    border-bottom: .5px solid var(--primary-color);
-    .nav-items{
-      display: flex;
-      justify-content: end;
-      margin: 0;
-      padding: 0;
-      .nav-item{
 
-        .link{
-          padding-left: 10px;
-          padding-right: 10px;
-          font-size: var(--smaller-font-size);
-          padding-top: 15px;
-          padding-bottom: 15px;
-          display: inline-block;
-          width: 100%;
-          &:hover{
-            color:#507fff;
+.header{
+  position: relative;
+  .nav-bar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgb(255, 255, 255);
+    // top app bar
+    .top-appbar{
+      border-bottom: .5px solid var(--primary-color);
+      .nav-items{
+        display: flex;
+        justify-content: end;
+        margin: 0;
+        padding: 0;
+        .nav-item{
+  
+          .link{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: var(--smaller-font-size);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: inline-block;
+            width: 100%;
+            &:hover{
+              color:#507fff;
+            }
+            svg{
+              margin-left: 4px;
+            }
           }
-          svg{
-            margin-left: 4px;
-          }
-        }
-        &.sub-menu{
-          z-index: 99;
-         position: relative;
-          .nav-items{
-            display: none;
-            position: absolute;
-            top: 44px;
-            right: -10px;
-            min-width: 130px;
-            background:#ffff;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            .nav-item{
-              .link{
-                padding: 12px 15px;
-                &:hover{
-                  background: var(--primary-color);
-                  color: #ffffff;
+          &.sub-menu{
+            z-index: 99;
+           position: relative;
+            .nav-items{
+              display: none;
+              position: absolute;
+              top: 44px;
+              right: -10px;
+              min-width: 130px;
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+              .nav-item{
+                .link{
+                  padding: 12px 15px;
+                  &:hover{
+                    background: var(--primary-color);
+                    color: #ffffff;
+                  }
                 }
               }
             }
-          }
-          &:hover{
-            .nav-items{
-              display: block;
-
-            }
-          }
-        }
-      }
-    }
-  }
-  // app bar
-  .appbar{
-
-    .appbar-area{
-      display: flex;
-      justify-content: space-between;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      flex-wrap: wrap;
-      background: rgb(255, 255, 255);
-      @include media-breakpoint-down(lg) {
-        position: relative;
-      }
-      
-      .nav-brand{
-        display: flex;
-        align-items: center;
-        img{
-          width: 26.11px;
-          height: 25.91px;
-          margin-right: 5px;
-        }
-
-      }
-      .bars{
-        display: flex;
-        align-items: center;
-        @include media-breakpoint-up(lg) {
-          display: none;
-        }
-        svg{
-          color: var(--primary-color);
-          width: 23px;
-          height: 16px;
-
-        }
-      }
-      .nav-items{
-        display: flex;
-      padding: 0;
-      @include media-breakpoint-down(lg) {
-              flex-direction: column;
-              flex-basis: 100%;
-              display: none;
-              background-color: #ffffff;
-              position: absolute;
-              width: 100%;
-              top: 71px;
-      }
-        .nav-item{
-          .link{
-            padding: 10px 15px;
-            margin-left: 2px;
-            transition: all .3s ease-in-out;
-            display: inline-block;
-            &.active,
             &:hover{
-              background:var(--primary-color);
-              color: var(--white-color);
-            }
-            @include media-breakpoint-down(lg) {
-              width: 100%;
-              &.active,
-              &:hover{
-                background:none;
-                color:rgb(2, 68, 211);
-                font-weight: 600;
+              .nav-items{
+                display: block;
+  
               }
             }
-            
           }
         }
       }
     }
-@include media-breakpoint-down(lg) {
-  &.show .nav-items{
-    display: block;
+    // app bar
+    .appbar{
+  
+      .appbar-area{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+        // background: rgb(255, 255, 255);
+        
+        .nav-brand{
+          display: flex;
+          align-items: center;
+          img{
+            width: 26.11px;
+            height: 25.91px;
+            margin-right: 5px;
+          }
+  
+        }
+        .bars{
+          display: flex;
+          align-items: center;
+          @include media-breakpoint-up(lg) {
+            display: none;
+          }
+          svg{
+            color: var(--primary-color);
+            width: 23px;
+            height: 16px;
+  
+          }
+        }
+        .nav-items{
+          display: flex;
+        padding: 0;
+        @include media-breakpoint-down(lg) {
+                flex-direction: column;
+                flex-basis: 100%;
+                display: none;
+                width: 100%;
+                top: 71px;
+        }
+          .nav-item{
+            .link{
+              padding: 10px 15px;
+              margin-left: 2px;
+              transition: all .3s ease-in-out;
+              display: inline-block;
+              &.active,
+              &:hover{
+                background:var(--primary-color);
+                color: var(--white-color);
+              }
+              @include media-breakpoint-down(lg) {
+                width: 100%;
+                &.active,
+                &:hover{
+                  background:none;
+                  color:rgb(2, 68, 211);
+                  font-weight: 600;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+  @include media-breakpoint-down(lg) {
+    &.show .nav-items{
+      display: block;
+    }
   }
-}
-
+  
+    }
   }
 }
 // ------- login-med Section ------
@@ -589,6 +595,142 @@ button {
         }
     }
 }
+// main Screen
+.main-screen{
+  .header{
+    background-image: url(../img/banner.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white-color);
+    .header-area{
+      background: rgba(18, 76, 117, 0.322);
+    }
+    h1{
+      color: var(--white-color);
+    }
+    .banner{
+      .banner-area{
+        padding-top: 215px;
+        text-align: center;
+        .dis{
+          margin-top: 50px;
+          font-size: 25px;
+          margin-bottom: 47px;
+          @include media-breakpoint-down(lg) {
+            font-size: 18px;
+          }
+          
+        }
+        .ban-btn{
+          padding-top: 81px;
+          padding-bottom: 91px;
+          button{
+            width: 332px;
+            padding: 20px 25px;
+            background: rgba(43, 224, 145, 1);
+            color: var(--white-color);
+            font-size: 25px;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover{
+              background: rgb(17, 185, 113);
+            }
+          }
+          @include media-breakpoint-down(md) {
+            padding-top: 41px;
+            padding-bottom: 59px;
+            button{
+              width: 160px;
+              padding: 17px 25px;
+              font-size: 16px;
+            }
+          }
+          
+        } 
+      }
+      
+     }
+    .nav-bar{
+      background: transparent;
+      @include media-breakpoint-down(lg) {
+        background: var(--primary-color);
+      }
+      
 
+      @include media-breakpoint-down(lg) {
+        .link{
+          color: var(--white-color) !important;
+        }
+      }
+      
+    
+      .appbar{
+   
+        // background: transparent;
+        .appbar-area{
+          background: transparent;
+          .bars{
+            svg{
+              color: var(--white-color);
+            }
+          }
+          .nav-brand{
+            color: var(--white-color);
+          }
+        }
+      }
+    }
+
+  }
+}
+// box-items
+.box-items{
+  max-width: 916px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4,1fr);
+  gap:53px ;
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 16px;
+  }
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  
+  .item{
+    padding: 36px 10px 26px 10px;
+    background: var(--primary-color);
+    border-radius:23px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    @include media-breakpoint-down(lg) {
+      flex-direction: row;
+      padding: 15px 26px;
+      border-radius:17px ;
+
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    
+    .icon{
+      margin-bottom: 20px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 0;
+        margin-right: 22px;
+      }
+      
+    }
+    .text{
+      font-size: 18px;
+    }
+  }
+}
 }
 
