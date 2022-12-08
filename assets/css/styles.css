@@ -1240,3 +1240,56 @@ button:focus {
   background: var(--primary-color);
   left: 0;
 }
+.assurato .timeline-main {
+  width: 100%;
+  height: 133px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  background: #F7F7F7;
+}
+.assurato .timeline-main .timeline {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.assurato .timeline-main .timeline .area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--primary-color);
+}
+.assurato .timeline-main .timeline .area .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  color: var(--primary-color);
+}
+.assurato .timeline-main .timeline .area .item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  top: -9px;
+  border-radius: 50%;
+  border: 4px solid white;
+  outline: 2px solid var(--primary-color);
+}
+.assurato .timeline-main .timeline .area .item.active::after {
+  background: var(--primary-color);
+}
+.assurato .timeline-main .timeline .area .item::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 16px;
+  background: #F7F7F7;
+  top: -9px;
+}

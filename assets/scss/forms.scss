@@ -1,3 +1,84 @@
-h2{
-    color: green;
+.assurato{
+    // custom-accordion
+    .custom-accordion{
+        ul.accordion-list {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            margin: 0;
+            list-style: none;
+            background-color: #f9f9fA;
+            
+            li {
+              position: relative;
+              display: block;
+              width: 100%;
+              height: auto;
+              background-color: #FFF;
+              padding: 20px;
+              margin: 0 auto 15px auto;
+              border: 1px solid #eee;
+              border-radius: 5px;
+              cursor: pointer;
+            
+
+              
+              h3 {
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 54px;
+                cursor: pointer;
+              }
+              
+              div.answer {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+                
+                
+                p {
+                  position: relative;
+                  display: block;
+                  font-weight: 300;
+                  padding: 10px 0 0 0;
+                  cursor: pointer;
+                  line-height: 150%;
+                  margin: 0 0 15px 0;
+                  font-size: 14px;
+                }
+              }
+              .acc-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+              .avatar{
+                width: 40px;
+                height: 40px;
+                background-color:rgba(71, 112, 229, 1) ;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .fa-angle-down{
+                  font-size: 30px;
+                  color: #ffff;
+                }
+              }
+              // &.active{
+              //   div.answer{
+              //     display: block;
+              //   }
+              // }
+            }
+          }
+    }
+    // checkBox
+    
 }

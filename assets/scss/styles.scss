@@ -1284,4 +1284,61 @@ button {
     left: 0;
   }
 }
+// timeline
+.timeline-main{
+  width: 100%;
+  height: 133px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  background: #F7F7F7;
+  .timeline{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+.area{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0;
+padding: 0;
+border-top: 1px solid var(--primary-color);
+.item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  color: var(--primary-color);
+  &::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ffff;
+    top: -9px;
+    border-radius:50% ;
+    border: 4px solid #ffff;
+    outline: 2px solid var(--primary-color);
+  }
+  &.active::after{
+    background: var(--primary-color);
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 16px;
+    background: #F7F7F7;
+    top: -9px;
+
+  }
+}
+}
+
+}
+}
+
 }
