@@ -142,6 +142,9 @@ button {
 .p-5 {
   padding: 3rem;
 }
+.ml-auto{
+  margin-left: auto;
+}
 .bg-primary {
   background: var(--primary-color) !important;
 }
@@ -1079,6 +1082,206 @@ button {
         
       }
     }
+  }
+}
+// ============ start-search-screen ==========
+.start-search-screen{
+  .banner{
+    border-bottom: 1px solid var(--primary-color);
+    @include media-breakpoint-down(md) {
+      border: none;
+    }
+    
+   .banner-area{
+    padding-top: 215px;
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      padding-top: 150px;
+     
+    }
+    
+    .title{
+      margin-bottom: 102px;
+      color: var(--primary-color);
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 45px;
+      }
+      
+    }
+    .btn{
+      display: inline-block;
+      margin-bottom: 110px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 37px;
+      }
+      
+    }
+   }
+  }
+}
+// start-search
+.hvilken-sec{
+  padding-top: 41px;
+  padding-bottom: 59px;
+  .area{
+    .title{
+      margin-bottom: 42px;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 28px;
+      color: var(--primary-color);
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+      
+    }
+    .hvilken-items{
+      display: grid;
+      gap: 5px 8px;
+      grid-template-columns: repeat(3,1fr);
+      @include media-breakpoint-down(lg) {
+      grid-template-columns: repeat(2,1fr);
+      }
+      @include media-breakpoint-down(sm) {
+        grid-template-columns: repeat(1,1fr);
+        }
+      
+    }
+    .btn-area{
+      margin-top: 29px;
+      text-align: end;
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        .btn{
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+      
+      .btn{
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  
+  }
+}
+.hvilken-items{
+  .item{
+    background-color: #E8F9FC;
+    display: flex;
+    padding: 16px 24px 16px 39px;
+    align-items: center;
+    transition: all .3s ease-in;
+    position: relative;
+    .added{
+      display: none;
+    }
+    .add{
+      display: block;
+    }
+    &.active{
+      background-color:rgba(218, 233, 236, 1) ;
+      .added{
+        display: block;
+      }
+      .add{
+        display: none;
+      }
+
+    }
+    &:hover{
+      background-color:rgba(218, 233, 236, 1) ;
+    }
+    &::after{
+      content: "";
+      width: 14px;
+      height: 38px;
+      position: absolute;
+      background: var(--primary-color);
+      left: 0;
+    }
+.ddd{
+  margin-left: auto;
+}
+    .avatar{
+      background: var(--primary-color);
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg{
+        color: var(--white-color);
+        font-size: 16px;
+      }
+
+    }
+    .r-icon{
+      margin-right: 25px;
+    }
+    .dis{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      @include media-breakpoint-down(lg) {
+        font-size: 15px;
+      }
+      
+    }
+  }
+}
+// ========= User Form Section ======
+.user-form-sec{
+  .area{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 13px;
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: repeat(1,1fr);
+    }
+    
+    // left
+    .left{
+      background: red;
+    }
+    // right
+    .right{
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      .dis{
+        padding: 42px 13px 139px 28px;
+        background-color:#F7F7F7;
+        .text{
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+}
+// form card
+.form-card{
+  background-color:#F7F7F7;
+  padding: 65px 20px 65px 51px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .card-text{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--primary-color);
+ 
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 38px; 
+    background: var(--primary-color);
+    left: 0;
   }
 }
 }

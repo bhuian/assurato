@@ -161,6 +161,10 @@ button:focus {
   padding: 3rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .bg-primary {
   background: var(--primary-color) !important;
 }
@@ -1044,4 +1048,195 @@ button:focus {
   font-size: 20px;
   line-height: 22px;
   color: var(--white-color);
+}
+.assurato .start-search-screen .banner {
+  border-bottom: 1px solid var(--primary-color);
+}
+@media (max-width: 767.98px) {
+  .assurato .start-search-screen .banner {
+    border: none;
+  }
+}
+.assurato .start-search-screen .banner .banner-area {
+  padding-top: 215px;
+}
+@media (max-width: 767.98px) {
+  .assurato .start-search-screen .banner .banner-area {
+    text-align: center;
+    padding-top: 150px;
+  }
+}
+.assurato .start-search-screen .banner .banner-area .title {
+  margin-bottom: 102px;
+  color: var(--primary-color);
+}
+@media (max-width: 991.98px) {
+  .assurato .start-search-screen .banner .banner-area .title {
+    margin-bottom: 45px;
+  }
+}
+.assurato .start-search-screen .banner .banner-area .btn {
+  display: inline-block;
+  margin-bottom: 110px;
+}
+@media (max-width: 767.98px) {
+  .assurato .start-search-screen .banner .banner-area .btn {
+    margin-bottom: 37px;
+  }
+}
+.assurato .hvilken-sec {
+  padding-top: 41px;
+  padding-bottom: 59px;
+}
+.assurato .hvilken-sec .area .title {
+  margin-bottom: 42px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  color: var(--primary-color);
+}
+@media (max-width: 767.98px) {
+  .assurato .hvilken-sec .area .title {
+    display: none;
+  }
+}
+.assurato .hvilken-sec .area .hvilken-items {
+  display: grid;
+  gap: 5px 8px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 991.98px) {
+  .assurato .hvilken-sec .area .hvilken-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575.98px) {
+  .assurato .hvilken-sec .area .hvilken-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.assurato .hvilken-sec .area .btn-area {
+  margin-top: 29px;
+  text-align: end;
+}
+@media (max-width: 767.98px) {
+  .assurato .hvilken-sec .area .btn-area {
+    text-align: center;
+  }
+  .assurato .hvilken-sec .area .btn-area .btn {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.assurato .hvilken-sec .area .btn-area .btn {
+  display: inline-block;
+  text-align: center;
+}
+.assurato .hvilken-items .item {
+  background-color: #E8F9FC;
+  display: flex;
+  padding: 16px 24px 16px 39px;
+  align-items: center;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+.assurato .hvilken-items .item .added {
+  display: none;
+}
+.assurato .hvilken-items .item .add {
+  display: block;
+}
+.assurato .hvilken-items .item.active {
+  background-color: rgb(218, 233, 236);
+}
+.assurato .hvilken-items .item.active .added {
+  display: block;
+}
+.assurato .hvilken-items .item.active .add {
+  display: none;
+}
+.assurato .hvilken-items .item:hover {
+  background-color: rgb(218, 233, 236);
+}
+.assurato .hvilken-items .item::after {
+  content: "";
+  width: 14px;
+  height: 38px;
+  position: absolute;
+  background: var(--primary-color);
+  left: 0;
+}
+.assurato .hvilken-items .item .ddd {
+  margin-left: auto;
+}
+.assurato .hvilken-items .item .avatar {
+  background: var(--primary-color);
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.assurato .hvilken-items .item .avatar svg {
+  color: var(--white-color);
+  font-size: 16px;
+}
+.assurato .hvilken-items .item .r-icon {
+  margin-right: 25px;
+}
+.assurato .hvilken-items .item .dis {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+@media (max-width: 991.98px) {
+  .assurato .hvilken-items .item .dis {
+    font-size: 15px;
+  }
+}
+.assurato .user-form-sec .area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+@media (max-width: 991.98px) {
+  .assurato .user-form-sec .area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.assurato .user-form-sec .area .left {
+  background: red;
+}
+.assurato .user-form-sec .area .right {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.assurato .user-form-sec .area .right .dis {
+  padding: 42px 13px 139px 28px;
+  background-color: #F7F7F7;
+}
+.assurato .user-form-sec .area .right .dis .text {
+  margin-bottom: 22px;
+}
+.assurato .form-card {
+  background-color: #F7F7F7;
+  padding: 65px 20px 65px 51px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.assurato .form-card .card-text {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.assurato .form-card::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 38px;
+  background: var(--primary-color);
+  left: 0;
 }
