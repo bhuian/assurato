@@ -63,3 +63,154 @@
   font-size: 30px;
   color: white;
 }
+.assurato .form-check {
+  height: 20px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  position: relative;
+}
+.assurato .form-check .check-input {
+  margin: 20px 0;
+  position: absolute;
+  opacity: 0;
+}
+.assurato .form-check .check-input + .check-label {
+  color: var(--gray-100);
+  position: relative;
+  left: 29px;
+  cursor: pointer;
+}
+.assurato .form-check .check-input + .check-label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e5e6e9;
+  border-radius: 4px;
+  background: #ffffff;
+  position: absolute;
+  top: -2px;
+  left: -29px;
+}
+.assurato .form-check .check-input:checked + .check-label:before {
+  background: var(--gray-100);
+}
+.assurato .form-check .check-input.secondary:checked + .check-label:before {
+  background: var(--secondary-color);
+}
+.assurato .form-check .check-input.secondary2:checked + .check-label:before {
+  background: var(--secondary2-color);
+}
+.assurato .form-check .check-input.success:checked + .check-label:before {
+  background: var(--success-color);
+}
+.assurato .form-check .check-input.warning:checked + .check-label:before {
+  background: var(--warning-color);
+}
+.assurato .form-check .check-input.danger:checked + .check-label:before {
+  background: var(--danger-color);
+}
+.assurato .form-check .check-input.info:checked + .check-label:before {
+  background: var(--info-color);
+}
+.assurato .form-check .check-input.dark:checked + .check-label:before {
+  background: var(--dark-color);
+}
+.assurato .form-check .check-input.outline:checked + .check-label:before {
+  background: none;
+  border: 1px solid var(--gray-100);
+}
+.assurato .form-check .check-input.outline.secondary:checked + .check-label:before {
+  background: none;
+  border: 1px solid var(--secondary-color);
+}
+.assurato .form-check .check-input.outline.secondary2:checked + .check-label:before {
+  background: none;
+  border: 1px solid var(--secondary2-color);
+}
+.assurato .form-check .check-input.outline.success:checked + .check-label:before {
+  background: none;
+  border: 1px solid var(--success-color);
+}
+.assurato .form-check .check-input.outline.warning:checked + .check-label:before {
+  background: none;
+  border: 1px solid var(--warning-color);
+}
+.assurato .form-check .check-input.outline.danger:checked + .check-label:before {
+  background: none;
+  border: 1px solid var(--danger-color);
+}
+.assurato .form-check .check-input.outline.info:checked + .check-label:before {
+  background: none;
+  border: 1px solid var(--info-color);
+}
+.assurato .form-check .check-input.outline.dark:checked + .check-label:before {
+  background: none;
+  border: 1px solid var(--dark-color);
+}
+.assurato .form-check .check-input:disabled + .check-label {
+  color: var(--gray-400);
+  cursor: auto;
+}
+.assurato .form-check .check-input.only-disabled:disabled + .check-label:before {
+  box-shadow: none;
+  background: none;
+}
+.assurato .form-check .check-input:disabled + .check-label:before {
+  box-shadow: none;
+  background: var(--gray-400);
+}
+.assurato .form-check .check-input.outline:disabled + .check-label:before {
+  box-shadow: none;
+  background: none;
+  border: 1px solid var(--gray-400);
+}
+.assurato .form-check .check-input:checked + .check-label:after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 7px;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 var(--white-color), 4px 0 0 var(--white-color), 4px -2px 0 var(--white-color), 4px -4px 0 var(--white-color), 4px -6px 0 var(--white-color), 4px -8px 0 var(--white-color);
+  background: var(--white-color);
+  transform: rotate(45deg);
+}
+.assurato .form-check .check-input.outline:checked + .check-label:after {
+  box-shadow: 2px 0 0 var(--gray-100), 4px 0 0 var(--gray-100), 4px -2px 0 var(--gray-100), 4px -4px 0 var(--gray-100), 4px -6px 0 var(--gray-100), 4px -8px 0 var(--gray-100);
+  background: var(--gray-100);
+}
+.assurato .form-check .check-input.outline.secondary:checked + .check-label:after {
+  box-shadow: 2px 0 0 var(--secondary-color), 4px 0 0 var(--secondary-color), 4px -2px 0 var(--secondary-color), 4px -4px 0 var(--secondary-color), 4px -6px 0 var(--secondary-color), 4px -8px 0 var(--secondary-color);
+  background: var(--secondary-color);
+}
+.assurato .form-check .check-input.outline.secondary2:checked + .check-label:after {
+  box-shadow: 2px 0 0 var(--secondary2-color), 4px 0 0 var(--secondary2-color), 4px -2px 0 var(--secondary2-color), 4px -4px 0 var(--secondary2-color), 4px -6px 0 var(--secondary2-color), 4px -8px 0 var(--secondary2-color);
+  background: var(--secondary2-color);
+}
+.assurato .form-check .check-input.outline.success:checked + .check-label:after {
+  box-shadow: 2px 0 0 var(--success-color), 4px 0 0 var(--success-color), 4px -2px 0 var(--success-color), 4px -4px 0 var(--success-color), 4px -6px 0 var(--success-color), 4px -8px 0 var(--success-color);
+  background: var(--success-color);
+}
+.assurato .form-check .check-input.outline.warning:checked + .check-label:after {
+  box-shadow: 2px 0 0 var(--warning-color), 4px 0 0 var(--warning-color), 4px -2px 0 var(--warning-color), 4px -4px 0 var(--warning-color), 4px -6px 0 var(--warning-color), 4px -8px 0 var(--warning-color);
+  background: var(--warning-color);
+}
+.assurato .form-check .check-input.outline.danger:checked + .check-label:after {
+  box-shadow: 2px 0 0 var(--danger-color), 4px 0 0 var(--danger-color), 4px -2px 0 var(--danger-color), 4px -4px 0 var(--danger-color), 4px -6px 0 var(--danger-color), 4px -8px 0 var(--danger-color);
+  background: var(--danger-color);
+}
+.assurato .form-check .check-input.outline.info:checked + .check-label:after {
+  box-shadow: 2px 0 0 var(--info-color), 4px 0 0 var(--info-color), 4px -2px 0 var(--info-color), 4px -4px 0 var(--info-color), 4px -6px 0 var(--info-color), 4px -8px 0 var(--info-color);
+  background: var(--info-color);
+}
+.assurato .form-check .check-input.outline.dark:checked + .check-label:after {
+  box-shadow: 2px 0 0 var(--dark-color), 4px 0 0 var(--dark-color), 4px -2px 0 var(--dark-color), 4px -4px 0 var(--dark-color), 4px -6px 0 var(--dark-color), 4px -8px 0 var(--dark-color);
+  background: var(--dark-color);
+}
+.assurato .form-check .check-input.outline:disabled + .check-label:after {
+  box-shadow: 2px 0 0 var(--gray-400), 4px 0 0 var(--gray-400), 4px -2px 0 var(--gray-400), 4px -4px 0 var(--gray-400), 4px -6px 0 var(--gray-400), 4px -8px 0 var(--gray-400);
+  background: var(--gray-400);
+}

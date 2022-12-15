@@ -34,6 +34,7 @@ $(document).ready(function() {
   // 
   $(document).ready(function(){
     $('.accordion-list > li > .answer').hide();
+    $('.accordion-list > li.active > .answer').show();
       
     $('.accordion-list > li').click(function() {
       if ($(this).hasClass("active")) {
