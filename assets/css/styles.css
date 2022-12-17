@@ -165,6 +165,34 @@ button:focus {
   margin-left: auto;
 }
 
+.sp-10 {
+  margin-top: 10px;
+}
+
+.sp-15 {
+  margin-top: 15px;
+}
+
+.sp-20 {
+  margin-top: 20px;
+}
+
+.sp-30 {
+  margin-top: 30px;
+}
+
+.sp-40 {
+  margin-top: 40px;
+}
+
+.sp-50 {
+  margin-top: 50px;
+}
+
+.sp-60 {
+  margin-top: 60px;
+}
+
 .bg-primary {
   background: var(--primary-color) !important;
 }
@@ -1089,20 +1117,24 @@ button:focus {
   padding-bottom: 59px;
 }
 .assurato .hvilken-sec .area .title {
-  margin-bottom: 42px;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 28px;
-  color: var(--primary-color);
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 60px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .assurato .hvilken-sec .area .title {
-    display: none;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 30px;
   }
 }
 .assurato .hvilken-sec .area .hvilken-items {
   display: grid;
-  gap: 5px 8px;
+  gap: 6px;
   grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 991.98px) {
@@ -1116,26 +1148,25 @@ button:focus {
   }
 }
 .assurato .hvilken-sec .area .btn-area {
-  margin-top: 29px;
-  text-align: end;
-}
-@media (max-width: 767.98px) {
-  .assurato .hvilken-sec .area .btn-area {
-    text-align: center;
-  }
-  .assurato .hvilken-sec .area .btn-area .btn {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+  margin-top: 80px;
+  text-align: center;
 }
 .assurato .hvilken-sec .area .btn-area .btn {
   display: inline-block;
   text-align: center;
+  font-family: "Almarai";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 24px;
+}
+.assurato .hvilken-items {
+  cursor: pointer;
 }
 .assurato .hvilken-items .item {
-  background-color: #E8F9FC;
+  background-color: #F7F7F7;
   display: flex;
-  padding: 16px 24px 16px 39px;
+  padding: 14px 20px;
   align-items: center;
   transition: all 0.3s ease-in;
   position: relative;
@@ -1147,7 +1178,10 @@ button:focus {
   display: block;
 }
 .assurato .hvilken-items .item.active {
-  background-color: rgb(218, 233, 236);
+  background-color: #E8F9FC;
+}
+.assurato .hvilken-items .item.active .avatar {
+  background-color: var(--primary-color);
 }
 .assurato .hvilken-items .item.active .added {
   display: block;
@@ -1156,21 +1190,13 @@ button:focus {
   display: none;
 }
 .assurato .hvilken-items .item:hover {
-  background-color: rgb(218, 233, 236);
-}
-.assurato .hvilken-items .item::after {
-  content: "";
-  width: 14px;
-  height: 38px;
-  position: absolute;
-  background: var(--primary-color);
-  left: 0;
+  background-color: rgb(199, 235, 241);
 }
 .assurato .hvilken-items .item .ddd {
   margin-left: auto;
 }
 .assurato .hvilken-items .item .avatar {
-  background: var(--primary-color);
+  background: #A4A4A4;
   width: 31px;
   height: 31px;
   border-radius: 50%;
@@ -1183,12 +1209,13 @@ button:focus {
   font-size: 16px;
 }
 .assurato .hvilken-items .item .r-icon {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 .assurato .hvilken-items .item .dis {
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
+  font-family: "Almarai";
 }
 @media (max-width: 991.98px) {
   .assurato .hvilken-items .item .dis {
@@ -1198,55 +1225,67 @@ button:focus {
 .assurato .user-form-sec .area {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 13px;
+  gap: 30px;
 }
 @media (max-width: 991.98px) {
   .assurato .user-form-sec .area {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.assurato .user-form-sec .area .left {
-  background: red;
+.assurato .user-form-sec .area .left .udfy {
+  margin-bottom: 15px;
+  margin-top: 40px;
 }
 .assurato .user-form-sec .area .right {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 10px;
 }
 .assurato .user-form-sec .area .right .dis {
-  padding: 42px 13px 139px 28px;
+  padding: 40px;
   background-color: #F7F7F7;
+  margin-bottom: 10px;
 }
 .assurato .user-form-sec .area .right .dis .text {
   margin-bottom: 22px;
 }
+.assurato .user-form-sec .area .under-acc-title {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+  margin-bottom: 30px;
+  display: inline-block;
+}
 .assurato .form-card {
   background-color: #F7F7F7;
-  padding: 65px 20px 65px 51px;
+  padding: 24px 36px;
   position: relative;
   display: flex;
   align-items: center;
+  border-radius: 6px;
 }
 .assurato .form-card .card-text {
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--primary-color);
-}
-.assurato .form-card::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 38px;
-  background: var(--primary-color);
-  left: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
 }
 .assurato .timeline-main {
   width: 100%;
-  height: 133px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
+  padding: 49px 40px 20px 40px;
   background: #F7F7F7;
+  border-radius: 6px 6px 0px 0px;
+  margin-bottom: 40px;
+}
+@media (max-width: 575.98px) {
+  .assurato .timeline-main {
+    padding: 3px 38px;
+    height: auto;
+    margin-bottom: 38px;
+  }
 }
 .assurato .timeline-main .timeline {
   display: flex;
@@ -1256,40 +1295,342 @@ button:focus {
 }
 .assurato .timeline-main .timeline .area {
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
-  border-top: 1px solid var(--primary-color);
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 575.98px) {
+  .assurato .timeline-main .timeline .area {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .assurato .timeline-main .timeline .area .item {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 0;
-  color: var(--primary-color);
+  padding: 17px 0;
+  color: #A4A4A4;
+}
+.assurato .timeline-main .timeline .area .item .cus-line {
+  width: 100%;
+  height: 2px;
+  background: #DDDDDD;
+  position: absolute;
+  top: -3px;
+  left: 71px;
+}
+@media (max-width: 575.98px) {
+  .assurato .timeline-main .timeline .area .item .cus-line {
+    height: 100%;
+    width: 2px;
+    left: 0;
+    top: 32px;
+  }
 }
 .assurato .timeline-main .timeline .area .item::after {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background: white;
   top: -9px;
   border-radius: 50%;
   border: 4px solid white;
   outline: 2px solid var(--primary-color);
+  z-index: 9;
+}
+@media (max-width: 575.98px) {
+  .assurato .timeline-main .timeline .area .item::after {
+    top: auto;
+    left: -6px;
+  }
+}
+.assurato .timeline-main .timeline .area .item.active {
+  color: var(--primary-color);
+  font-weight: 700;
 }
 .assurato .timeline-main .timeline .area .item.active::after {
+  background: var(--primary-color);
+}
+.assurato .timeline-main .timeline .area .item.active.complete::after {
+  background: none;
+  border: 4px solid var(--primary-color);
+}
+.assurato .timeline-main .timeline .area .item.active.complete .cus-line {
   background: var(--primary-color);
 }
 .assurato .timeline-main .timeline .area .item::before {
   content: "";
   position: absolute;
-  width: 130px;
+  width: 60px;
   height: 16px;
   background: #F7F7F7;
   top: -9px;
+  z-index: 9;
+}
+@media (max-width: 575.98px) {
+  .assurato .timeline-main .timeline .area .item::before {
+    width: 15px;
+    height: 60px;
+    top: auto;
+    left: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .assurato .timeline-main .timeline .area .item {
+    justify-content: start;
+    padding: 27px 28px;
+  }
+}
+@media (max-width: 575.98px) {
+  .assurato .timeline-main .timeline .area {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .assurato .timeline-main .timeline .area::after {
+    width: 2px;
+    height: 80%;
+    top: 10px;
+    left: 0;
+  }
+}
+.assurato .form-check {
+  margin-bottom: 48px;
+}
+.assurato .form-check .dis h5 {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.assurato .form-check .dis p {
+  font-family: "Almarai";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.assurato .btn-group {
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.assurato .btn-group input[type=button] {
+  background: #FFFFFF;
+  border: none;
+  outline: none;
+  float: left;
+  width: 73px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #218FF3;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  border: 1px solid #4770E5;
+}
+.assurato .btn-group input[type=button].active {
+  background: var(--primary-color);
+  color: #FFFFFF;
+}
+.assurato .btn-group input[type=button]:first-child {
+  border-right: none;
+  border-radius: 6px 0px 0px 6px;
+}
+.assurato .btn-group input[type=button]:last-child {
+  border-radius: 0px 6px 6px 0px;
+  border-left: none;
+}
+.assurato .dk-input-group {
+  max-width: 177px;
+  display: flex;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.assurato .dk-input-group .left {
+  padding: 13px 8px 12px 8px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.assurato .dk-input-group input[type=text] {
+  border: none;
+  background: white;
+  padding-left: 12px;
+}
+.assurato .dk-input-group input[type=text]:focus {
+  border: none;
+  outline: none;
+}
+.assurato .dk-input-group ::-moz-placeholder {
+  color: rgb(198, 233, 238);
+  opacity: 1;
+}
+.assurato .dk-input-group :-ms-input-placeholder {
+  color: rgb(198, 233, 238);
+  opacity: 1;
+}
+.assurato .dk-input-group ::placeholder {
+  color: rgb(198, 233, 238);
+  opacity: 1;
+}
+.assurato .antal-input {
+  max-width: 86px;
+  padding: 13px 12px 12px 35px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+}
+.assurato .antal-input:focus {
+  border: 1px solid var(--primary-color);
+  outline: none;
+}
+.assurato .antal-input::-moz-placeholder {
+  color: rgb(198, 233, 238);
+  opacity: 1;
+}
+.assurato .antal-input:-ms-input-placeholder {
+  color: rgb(198, 233, 238);
+  opacity: 1;
+}
+.assurato .antal-input::placeholder {
+  color: rgb(198, 233, 238);
+  opacity: 1;
+}
+.assurato .bottom-nav-btns {
+  margin-top: 158px;
+  margin-bottom: 47px;
+  display: flex;
+  justify-content: space-between;
+}
+.assurato .bottom-nav-btns .btn {
+  font-family: "Almarai";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 24px;
+  border-radius: 6px;
+}
+.assurato .bottom-nav-btns .btn.outline {
+  background: var(--white-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+.assurato .bottom-nav-btns .btn.outline:hover {
+  background: rgb(198, 233, 238);
+}
+.assurato input,
+.assurato .input {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+.assurato input:focus,
+.assurato .input:focus {
+  border: 1px solid var(--primary-color);
+  outline: none;
+}
+.assurato input::-moz-placeholder, .assurato .input::-moz-placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #DDDDDD;
+  opacity: 1;
+}
+.assurato input:-ms-input-placeholder, .assurato .input:-ms-input-placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #DDDDDD;
+  opacity: 1;
+}
+.assurato input::placeholder,
+.assurato .input::placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #DDDDDD;
+  opacity: 1;
+}
+.assurato .date-input {
+  display: flex;
+  gap: 5px;
+}
+.assurato .date-input input {
+  padding: 12px;
+  width: 48px;
+}
+.assurato .date-input input::-moz-placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4770E5;
+  opacity: 1;
+}
+.assurato .date-input input:-ms-input-placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4770E5;
+  opacity: 1;
+}
+.assurato .date-input input::placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4770E5;
+  opacity: 1;
+}
+.assurato .date-input input:last-child {
+  width: 63px;
+}
+.assurato .input-row {
+  display: flex;
+  gap: 7px;
+}
+.assurato .input-row input:first-child {
+  width: 109px;
+}
+.assurato .input-row input:last-child {
+  flex-grow: 1;
+}
+.assurato .list-of-input {
+  display: flex;
+}
+.assurato .list-of-input input {
+  border-right: none;
+  border-radius: 0;
+  width: 47px;
+  padding: 12px 12px;
+}
+.assurato .list-of-input input:focus {
+  border: 1px solid #EEEEEE;
+  border-right: none;
+}
+.assurato .list-of-input input:last-child {
+  border-right: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+}
+.assurato .list-of-input input.active {
+  background: var(--primary-color);
+  color: var(--white-color);
 }
