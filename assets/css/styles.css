@@ -110,15 +110,17 @@ h1 {
 @media (max-width: 991.98px) {
   .h1,
 h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
-.h2, h2 {
+.h2,
+h2 {
   font-size: 40px;
 }
 @media (max-width: 991.98px) {
-  .h2, h2 {
+  .h2,
+h2 {
     font-size: 30px;
   }
 }
@@ -225,6 +227,10 @@ button:focus {
   background: var(--dark-color) !important;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .d-none {
   display: none;
 }
@@ -252,53 +258,85 @@ button:focus {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container {
+  .container-sm,
+.container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
+  .container-md,
+.container-sm,
+.container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
+  .container-lg,
+.container-md,
+.container-sm,
+.container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
     max-width: 1320px;
   }
 }
+.assurato .login-screen .header {
+  background: #e8f9fc;
+}
+.assurato .login-screen .header .nav-bar {
+  background: #e8f9fc;
+}
+@media (max-width: 991.98px) {
+  .assurato .login-screen .header .nav-bar {
+    background: #e8f9fc;
+  }
+}
 .assurato .login-screen .banner {
-  padding: 30px 0 100px 0;
+  padding: 30px 0 118px 0;
 }
 @media (max-width: 991.98px) {
   .assurato .login-screen .banner {
-    padding: 20px 0 70px 0;
+    padding: 20px 0 40px 0;
   }
 }
 .assurato .login-screen .banner .banner-area {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 215px;
+  margin: 90px auto;
+  margin-bottom: 0;
 }
 @media (min-width: 992px) {
   .assurato .login-screen .banner .banner-area {
     width: 60%;
-    text-align: start;
+    text-align: center;
   }
 }
 .assurato .login-screen .banner .banner-area .title {
-  margin-bottom: 55px;
+  margin-bottom: 40px;
   color: var(--primary-color);
+}
+@media (max-width: 991.98px) {
+  .assurato .login-screen .banner .banner-area .title {
+    margin-bottom: 15px;
+  }
 }
 .assurato .login-screen .banner .banner-area .dis {
   margin-bottom: 20px;
@@ -371,13 +409,17 @@ button:focus {
 .assurato .header .nav-bar .appbar .appbar-area {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
   flex-wrap: wrap;
+}
+@media (max-width: 991.98px) {
+  .assurato .header .nav-bar .appbar .appbar-area {
+    padding: 20px 0;
+  }
 }
 .assurato .header .nav-bar .appbar .appbar-area .nav-brand {
   display: flex;
   align-items: center;
+  color: var(--primary-color);
 }
 .assurato .header .nav-bar .appbar .appbar-area .nav-brand img {
   width: 26.11px;
@@ -455,7 +497,12 @@ button:focus {
   }
 }
 .assurato .login-med-main {
-  margin-bottom: 93px;
+  margin-bottom: 97px;
+}
+@media (max-width: 991.98px) {
+  .assurato .login-med-main {
+    margin-bottom: 60px;
+  }
 }
 @media (max-width: 991.98px) {
   .assurato .login-med-main .login-med-area .login-med-header {
@@ -467,7 +514,8 @@ button:focus {
 }
 .assurato .login-med-main .login-med-area .login-med-header .login-med-header-top {
   height: 55px;
-  background: rgb(232, 249, 252);
+  background: var(--primary-color);
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -476,7 +524,7 @@ button:focus {
   cursor: pointer;
 }
 .assurato .login-med-main .login-med-area .login-med-header .login-med-header-top:hover {
-  background: rgb(218, 233, 236);
+  background: #386af3;
 }
 @media (min-width: 992px) {
   .assurato .login-med-main .login-med-area .login-med-header .login-med-header-top {
@@ -490,7 +538,7 @@ button:focus {
   font-size: 10px;
 }
 .assurato .login-med-main .login-med-area .login-med-header .login-med-header-top:hover {
-  background: rgb(218, 233, 236);
+  background: #386af3;
 }
 @media (max-width: 991.98px) {
   .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns {
@@ -498,6 +546,7 @@ button:focus {
     width: 100%;
     top: 57px;
     display: none;
+    z-index: 9;
   }
 }
 .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul {
@@ -512,69 +561,100 @@ button:focus {
   }
 }
 .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li {
-  background: rgb(232, 249, 252);
+  background: var(--white-color);
   padding-top: 22px;
   padding-bottom: 24px;
   width: 100%;
   text-align: center;
-  border-right: 1px solid var(--primary-color);
+  border: 1px solid #f7f7f7;
+  color: var(--primary-color);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-@media (max-width: 991.98px) {
-  .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li {
-    border: none;
-  }
-}
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li:last-child {
+.assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li:nth-child(2) {
   border-right: none;
 }
 .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li.active {
-  background: rgb(218, 233, 236);
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  color: var(--white-color);
 }
 .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li:hover {
-  background: rgb(218, 233, 236);
+  border: 1px solid #356afd;
+  background: #356afd;
+  color: var(--white-color);
 }
 .assurato .login-med-main .login-med-area .login-med-footer {
-  margin-top: 39px;
+  margin-top: 127px;
   display: none;
+}
+@media (max-width: 991.98px) {
+  .assurato .login-med-main .login-med-area .login-med-footer {
+    margin-top: 60px;
+  }
 }
 .assurato .login-med-main .login-med-area .login-med-footer.show {
   display: block;
 }
 .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area {
   display: flex;
-  gap: 18px;
+  gap: 128px;
+}
+@media (max-width: 1399.98px) {
+  .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area {
+    gap: 80px;
+  }
+}
+@media (max-width: 991.98px) {
+  .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left {
   width: 100%;
+  background: #f7f7f7;
+  padding: 80px;
+  border-radius: 12px;
 }
-@media (max-width: 991.98px) {
-  .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left img {
-    width: 100%;
+@media (max-width: 1199.98px) {
+  .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left {
+    padding: 40px;
   }
 }
-.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .right {
-  background: #F7F7F7;
-  height: 432px;
-  padding: 42px 13px 42px 28px;
+.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left input[type=button] {
+  background: #2be091;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  transition: all 0.3s ease;
 }
-@media (max-width: 991.98px) {
-  .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .right {
-    display: none;
-  }
+.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left input[type=button]:hover {
+  background: #23f59a;
 }
 .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .right .text {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .right .text:last-child {
+  margin-bottom: 0;
 }
 .assurato .footer {
-  background: #124B75;
+  background: #124b75;
   padding-top: 83px;
   padding-bottom: 83px;
+}
+@media (max-width: 991.98px) {
+  .assurato .footer {
+    padding-top: 30px;
+    padding-bottom: 3px;
+  }
 }
 .assurato .footer .footer-area {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 @media (min-width: 992px) {
   .assurato .footer .footer-area {
@@ -584,10 +664,10 @@ button:focus {
   }
 }
 .assurato .footer .footer-area .footer-item {
-  order: 1;
+  margin-bottom: 30px;
 }
 .assurato .footer .footer-area .footer-item.brand-footer {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 @media (min-width: 992px) {
   .assurato .footer .footer-area .footer-item.brand-footer {
@@ -603,14 +683,10 @@ button:focus {
 .assurato .footer .footer-area .footer-item ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 0;
   padding-bottom: 3px;
-}
-@media (min-width: 992px) {
-  .assurato .footer .footer-area .footer-item ul {
-    align-items: flex-start;
-  }
+  margin: 0;
 }
 .assurato .footer .footer-area .footer-item ul li {
   color: var(--white-color);
@@ -627,36 +703,13 @@ button:focus {
   color: var(--gray-500);
 }
 .assurato .footer .footer-area .footer-item.social-icon ul {
-  flex-direction: row;
-}
-@media (max-width: 991.98px) {
-  .assurato .footer .footer-area .footer-item.social-icon ul .text {
-    display: none;
-  }
+  flex-direction: column;
 }
 .assurato .footer .footer-area .footer-item.social-icon ul .footer-icon {
   font-size: 20px;
   display: none;
   padding-left: 11px;
   padding-right: 11px;
-}
-@media (max-width: 991.98px) {
-  .assurato .footer .footer-area .footer-item.social-icon ul .footer-icon {
-    display: block;
-  }
-}
-@media (min-width: 992px) {
-  .assurato .footer .footer-area .footer-item.social-icon ul {
-    flex-direction: column;
-  }
-}
-@media (min-width: 992px) {
-  .assurato .footer .footer-area .footer-item:nth-child(1) {
-    order: 0;
-  }
-  .assurato .footer .footer-area .footer-item:nth-child(5) {
-    order: 0;
-  }
 }
 .assurato .main-screen .header {
   background-image: url(../img/banner.png);
@@ -713,6 +766,7 @@ button:focus {
   }
 }
 .assurato .main-screen .header .nav-bar {
+  z-index: 9999;
   background: transparent;
 }
 @media (max-width: 991.98px) {
@@ -947,7 +1001,7 @@ button:focus {
   }
 }
 .assurato .brand-logo {
-  background: #F7F7F7;
+  background: #f7f7f7;
   padding-bottom: 70px;
   padding-top: 275px;
 }
@@ -1196,7 +1250,7 @@ button:focus {
   cursor: pointer;
 }
 .assurato .hvilken-items .item {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   display: flex;
   padding: 14px 20px;
   align-items: center;
@@ -1210,7 +1264,7 @@ button:focus {
   display: block;
 }
 .assurato .hvilken-items .item.active {
-  background-color: #E8F9FC;
+  background-color: #e8f9fc;
 }
 .assurato .hvilken-items .item.active .avatar {
   background-color: var(--primary-color);
@@ -1228,7 +1282,7 @@ button:focus {
   margin-left: auto;
 }
 .assurato .hvilken-items .item .avatar {
-  background: #A4A4A4;
+  background: #a4a4a4;
   width: 31px;
   height: 31px;
   border-radius: 50%;
@@ -1275,7 +1329,7 @@ button:focus {
 }
 .assurato .user-form-sec .area .right .dis {
   padding: 40px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   margin-bottom: 10px;
 }
 .assurato .user-form-sec .area .right .dis .text {
@@ -1292,7 +1346,7 @@ button:focus {
   display: inline-block;
 }
 .assurato .form-card {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 24px 36px;
   position: relative;
   display: flex;
@@ -1308,7 +1362,7 @@ button:focus {
 .assurato .timeline-main {
   width: 100%;
   padding: 49px 40px 20px 40px;
-  background: #F7F7F7;
+  background: #f7f7f7;
   border-radius: 6px 6px 0px 0px;
   margin-bottom: 40px;
 }
@@ -1346,12 +1400,12 @@ button:focus {
   align-items: center;
   justify-content: center;
   padding: 17px 0;
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
 .assurato .timeline-main .timeline .area .item .cus-line {
   width: 100%;
   height: 2px;
-  background: #DDDDDD;
+  background: #dddddd;
   position: absolute;
   top: -3px;
   left: 71px;
@@ -1401,7 +1455,7 @@ button:focus {
   position: absolute;
   width: 60px;
   height: 16px;
-  background: #F7F7F7;
+  background: #f7f7f7;
   top: -9px;
   z-index: 9;
 }
@@ -1453,7 +1507,7 @@ button:focus {
   display: inline-block;
 }
 .assurato .btn-group input[type=button] {
-  background: #FFFFFF;
+  background: #ffffff;
   border: none;
   outline: none;
   float: left;
@@ -1461,14 +1515,14 @@ button:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #218FF3;
+  color: #218ff3;
   padding-top: 12px;
   padding-bottom: 13px;
-  border: 1px solid #4770E5;
+  border: 1px solid #4770e5;
 }
 .assurato .btn-group input[type=button].active {
   background: var(--primary-color);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .assurato .btn-group input[type=button]:first-child {
   border-right: none;
@@ -1561,8 +1615,8 @@ button:focus {
   width: 100%;
   padding: 14px 20px;
   border-radius: 6px;
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 .assurato input:focus,
 .assurato .input:focus {
@@ -1575,7 +1629,7 @@ button:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #DDDDDD;
+  color: #dddddd;
   opacity: 1;
 }
 .assurato input:-ms-input-placeholder, .assurato .input:-ms-input-placeholder {
@@ -1584,7 +1638,7 @@ button:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #DDDDDD;
+  color: #dddddd;
   opacity: 1;
 }
 .assurato input::placeholder,
@@ -1594,7 +1648,7 @@ button:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #DDDDDD;
+  color: #dddddd;
   opacity: 1;
 }
 .assurato .date-input {
@@ -1611,7 +1665,7 @@ button:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #4770E5;
+  color: #4770e5;
   opacity: 1;
 }
 .assurato .date-input input:-ms-input-placeholder {
@@ -1620,7 +1674,7 @@ button:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #4770E5;
+  color: #4770e5;
   opacity: 1;
 }
 .assurato .date-input input::placeholder {
@@ -1629,7 +1683,7 @@ button:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #4770E5;
+  color: #4770e5;
   opacity: 1;
 }
 .assurato .date-input input:last-child {
@@ -1655,12 +1709,12 @@ button:focus {
   padding: 12px 12px;
 }
 .assurato .list-of-input input:focus {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-right: none;
 }
 .assurato .list-of-input input:last-child {
-  border-right: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
+  border-right: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .assurato .list-of-input input.active {
   background: var(--primary-color);
@@ -1708,7 +1762,7 @@ button:focus {
   flex-basis: 100px;
 }
 .assurato .check-row .dis-row .check-detail .stars svg {
-  color: #F2E900;
+  color: #f2e900;
 }
 @media (max-width: 575.98px) {
   .assurato .check-row .dis-row .check-detail {
@@ -1737,4 +1791,47 @@ button:focus {
   .assurato .check-row.form-check .check-input:checked + .check-label:after {
     top: 35px;
   }
+}
+.assurato .icon-input-field {
+  position: relative;
+  border-radius: 6px;
+}
+.assurato .icon-input-field label {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.assurato .icon-input-field label svg {
+  color: #a4a4a4;
+  font-size: 15px;
+}
+.assurato .icon-input-field input {
+  padding-left: 50px;
+  padding-right: 24px;
+  background-color: #ffffff;
+}
+.assurato .icon-input-field input::-moz-placeholder {
+  color: #a4a4a4;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.assurato .icon-input-field input:-ms-input-placeholder {
+  color: #a4a4a4;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.assurato .icon-input-field input::placeholder {
+  color: #a4a4a4;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
