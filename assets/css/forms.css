@@ -1,3 +1,10 @@
+.assurato {
+  /*style the arrow inside the select element:*/
+  /*point the arrow upwards when the select box is open (active):*/
+  /*style the items (options), including the selected item:*/
+  /*style items (options):*/
+  /*hide the items when the select box is closed:*/
+}
 .assurato .custom-accordion ul.accordion-list {
   position: relative;
   display: block;
@@ -229,4 +236,78 @@
 .assurato .form-check .check-input.outline:disabled + .check-label:after {
   box-shadow: 2px 0 0 var(--gray-400), 4px 0 0 var(--gray-400), 4px -2px 0 var(--gray-400), 4px -4px 0 var(--gray-400), 4px -6px 0 var(--gray-400), 4px -8px 0 var(--gray-400);
   background: var(--gray-400);
+}
+.assurato .custom-select {
+  position: relative;
+  font-family: Arial;
+  border: 1px solid var(--gray-600);
+  border-radius: 6px;
+}
+.assurato .custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.assurato .select-selected {
+  background-color: var(--whate-color);
+}
+.assurato .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 18px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: var(--gray-400) transparent transparent transparent;
+}
+.assurato .select-selected.select-arrow-active:after {
+  border-color: transparent transparent var(--gray-400) transparent;
+  top: 13px;
+}
+.assurato .select-items div,
+.assurato .select-selected {
+  padding: 15px 18px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.assurato .select-items {
+  position: absolute;
+  background-color: var(--white-color);
+  top: 55px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  color: var(--gray-100);
+  filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.08));
+  border-radius: 4px;
+}
+.assurato .select-items::after {
+  position: absolute;
+  content: "";
+  top: -21px;
+  left: 18px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-color: transparent transparent var(--white-color) transparent;
+}
+.assurato .select-items div {
+  padding: 12px 20px;
+}
+.assurato .select-items div:first-child {
+  padding-top: 22px;
+}
+.assurato .select-items div:last-child {
+  padding-bottom: 22px;
+}
+.assurato .select-hide {
+  display: none;
+}
+.assurato .select-items div:hover,
+.assurato .same-as-selected {
+  background-color: var(--gray-700);
+  border-radius: 4px;
 }

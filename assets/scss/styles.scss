@@ -1635,17 +1635,33 @@ input,
 .check-row{
   display: inline-block;
   width: 100%;
+    &.form-check .check-input + .check-label:before {
+      top: 16px;
+  }
+  &.form-check .check-input:checked + .check-label:before {
+    background: rgb(71, 112, 229);
+  }
+  &.form-check .check-input:checked + .check-label:after {
+    top: 25px;
+  }
   .dis-row{
    
     .img{
       width: 54px;
       height: 54px;
+      margin-left: 7px;
+      @include media-breakpoint-down(sm) {
+        margin-left:10px;
+      }
+      
     }
     display: flex;
     align-items: center;
     .check-detail{
       display: flex;
       width: 100%;
+    
+      
       .text{
         flex-grow: 1;
         padding-left: 10px;
@@ -1662,7 +1678,37 @@ input,
           color: #F2E900;
         }
       }
+      @include media-breakpoint-down(sm) {
+     
+        flex-direction: column;
+        gap: 10px;
+        .stars{
+          flex-basis:auto;
+          padding-left: 20px;
+        }
+        .percentage{
+          flex-basis:auto;
+          padding-left: 20px;
+      
+        }
+        .text{
+          padding-left: 20px;
+        }
+
+      }
     }
   }
+  @include media-breakpoint-down(sm) {
+    &.form-check .check-input + .check-label:before {
+      top: 26px;
+  }
+  &.form-check .check-input:checked + .check-label:before {
+    background: rgb(71, 112, 229);
+  }
+  &.form-check .check-input:checked + .check-label:after {
+    top: 35px;
+  }
+  }
+  
 }
 }

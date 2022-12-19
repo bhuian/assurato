@@ -1638,6 +1638,15 @@ button:focus {
   display: inline-block;
   width: 100%;
 }
+.assurato .check-row.form-check .check-input + .check-label:before {
+  top: 16px;
+}
+.assurato .check-row.form-check .check-input:checked + .check-label:before {
+  background: rgb(71, 112, 229);
+}
+.assurato .check-row.form-check .check-input:checked + .check-label:after {
+  top: 25px;
+}
 .assurato .check-row .dis-row {
   display: flex;
   align-items: center;
@@ -1645,6 +1654,12 @@ button:focus {
 .assurato .check-row .dis-row .img {
   width: 54px;
   height: 54px;
+  margin-left: 7px;
+}
+@media (max-width: 575.98px) {
+  .assurato .check-row .dis-row .img {
+    margin-left: 10px;
+  }
 }
 .assurato .check-row .dis-row .check-detail {
   display: flex;
@@ -1662,4 +1677,32 @@ button:focus {
 }
 .assurato .check-row .dis-row .check-detail .stars svg {
   color: #F2E900;
+}
+@media (max-width: 575.98px) {
+  .assurato .check-row .dis-row .check-detail {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .assurato .check-row .dis-row .check-detail .stars {
+    flex-basis: auto;
+    padding-left: 20px;
+  }
+  .assurato .check-row .dis-row .check-detail .percentage {
+    flex-basis: auto;
+    padding-left: 20px;
+  }
+  .assurato .check-row .dis-row .check-detail .text {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .assurato .check-row.form-check .check-input + .check-label:before {
+    top: 26px;
+  }
+  .assurato .check-row.form-check .check-input:checked + .check-label:before {
+    background: rgb(71, 112, 229);
+  }
+  .assurato .check-row.form-check .check-input:checked + .check-label:after {
+    top: 35px;
+  }
 }
