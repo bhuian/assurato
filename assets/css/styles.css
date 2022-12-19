@@ -229,6 +229,12 @@ button:focus {
   display: none;
 }
 
+@media (min-width: 992px) {
+  .lg-show {
+    display: none !important;
+  }
+}
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -310,6 +316,11 @@ button:focus {
 .assurato .header .nav-bar .top-appbar {
   border-bottom: 0.5px solid var(--primary-color);
 }
+@media (max-width: 991.98px) {
+  .assurato .header .nav-bar .top-appbar {
+    display: none;
+  }
+}
 .assurato .header .nav-bar .top-appbar .nav-items {
   display: flex;
   justify-content: end;
@@ -354,6 +365,9 @@ button:focus {
 .assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu:hover .nav-items {
   display: block;
 }
+.assurato .header .nav-bar .appbar.shadow {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
 .assurato .header .nav-bar .appbar .appbar-area {
   display: flex;
   justify-content: space-between;
@@ -395,6 +409,8 @@ button:focus {
     display: none;
     width: 100%;
     top: 71px;
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 }
 .assurato .header .nav-bar .appbar .appbar-area .nav-items .nav-item .link {
@@ -416,6 +432,22 @@ button:focus {
     color: rgb(2, 68, 211);
     font-weight: 600;
   }
+}
+.assurato .header .nav-bar .appbar .appbar-area .mobile-topbar {
+  margin: 0;
+}
+.assurato .header .nav-bar .appbar .appbar-area .mobile-topbar .nav-item.sub-menu .fa-angle-down {
+  margin-left: 16px;
+}
+.assurato .header .nav-bar .appbar .appbar-area .mobile-topbar .nav-item.sub-menu .nav-items {
+  display: none;
+  background-color: rgb(240, 240, 240);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 0;
+}
+.assurato .header .nav-bar .appbar .appbar-area .mobile-topbar .nav-item.sub-menu .nav-items.show {
+  display: block;
 }
 @media (max-width: 991.98px) {
   .assurato .header .nav-bar .appbar.show .nav-items {

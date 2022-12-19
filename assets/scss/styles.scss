@@ -194,6 +194,13 @@ button {
 .d-none {
   display: none;
 }
+.lg-show{
+  @include media-breakpoint-up(lg) {
+    display: none !important;
+
+  }
+  
+}
 // ============================
 // ********* Container ********
 // ============================
@@ -285,6 +292,10 @@ button {
     // top app bar
     .top-appbar{
       border-bottom: .5px solid var(--primary-color);
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+      
       .nav-items{
         display: flex;
         justify-content: end;
@@ -341,7 +352,10 @@ button {
     }
     // app bar
     .appbar{
-  
+      
+      &.shadow{
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+      }
       .appbar-area{
         display: flex;
         justify-content: space-between;
@@ -382,6 +396,8 @@ button {
                 display: none;
                 width: 100%;
                 top: 71px;
+                margin-top: 40px;
+                margin-bottom: 0;
         }
           .nav-item{
             .link{
@@ -404,6 +420,28 @@ button {
                 }
               }
               
+            }
+          }
+        }
+        .mobile-topbar{
+          // background-color: red;
+          margin: 0;
+          .nav-item{
+            &.sub-menu{
+              .fa-angle-down{
+                margin-left: 16px;
+              }
+              .nav-items{
+              display: none;
+              background-color: rgb(240, 240, 240);
+              border-radius: 6px;
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+              margin: 0;
+              &.show{
+                display: block;
+              }
+              }
+
             }
           }
         }

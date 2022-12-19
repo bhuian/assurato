@@ -2,6 +2,7 @@
 $(document).ready(function() {
   $(".bars").click(function(){
     $(".appbar").toggleClass("show");
+    $(".appbar").toggleClass("shadow");
   });
   $(".login-med-header").click(function(){
     $(".login-med-header-btns").toggleClass("show");
@@ -27,6 +28,10 @@ $(document).ready(function() {
     $('#med-e-mail').removeClass('show');
     $('#med-ind').addClass('show');
    })
+  //  top appbar
+  $(".mobile-topbar .sub-menu").click(function(){
+    $(".mobile-topbar .sub-menu .nav-items").toggleClass("show");
+  });
   });
 
 
