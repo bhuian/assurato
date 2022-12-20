@@ -1438,6 +1438,11 @@ button:focus {
   display: flex;
   align-items: center;
   border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.assurato .form-card:hover {
+  background-color: #ebeaea;
 }
 .assurato .form-card .card-text {
   font-weight: 700;
