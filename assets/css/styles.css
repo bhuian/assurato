@@ -976,8 +976,12 @@ button:focus {
   }
 }
 .assurato .kom-i-gang-sec {
-  padding: 119px 0 98px 0;
-  padding: 55px 0 68px 0;
+  padding: 60px 0 140px 0;
+}
+@media (max-width: 991.98px) {
+  .assurato .kom-i-gang-sec {
+    padding: 0px 0 80px 0;
+  }
 }
 .assurato .kom-i-gang-sec .area {
   text-align: center;
@@ -985,7 +989,7 @@ button:focus {
 .assurato .kom-i-gang-sec .area .title {
   width: 507px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
   .assurato .kom-i-gang-sec .area .title {
@@ -1004,37 +1008,31 @@ button:focus {
   }
 }
 .assurato .kom-i-gang-sec .area .btn {
-  margin-top: 105px;
+  margin-top: 20px;
   display: inline-block;
-}
-@media (max-width: 991.98px) {
-  .assurato .kom-i-gang-sec .area .btn {
-    margin-top: 35px;
-  }
+  border-radius: 6px;
 }
 .assurato .brand-logo {
-  background: #f7f7f7;
-  padding-bottom: 70px;
-  padding-top: 275px;
+  padding-bottom: 60px;
 }
 .assurato .brand-logo .area .title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .assurato .brand-logo .area .logoes {
   display: grid;
-  grid-template-columns: repeat(5, 86px);
-  gap: 72px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
   justify-content: space-between;
 }
 @media (max-width: 991.98px) {
   .assurato .brand-logo .area .logoes {
-    grid-template-columns: repeat(4, 46px);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 575.98px) {
   .assurato .brand-logo .area .logoes {
-    grid-template-columns: repeat(3, 46px);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .assurato .brand-logo .area .logoes img {
@@ -1044,6 +1042,18 @@ button:focus {
   .assurato .brand-logo .area .logoes img {
     width: 46px;
   }
+}
+.assurato .brand-logo .area .logoes .brand-img {
+  background: #f7f7f7;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.assurato .brand-logo .area .logoes .brand-img:hover {
+  background: #e0e0e0;
 }
 .assurato .sammenlign-sec {
   padding-top: 120px;

@@ -959,9 +959,9 @@ button {
   }
   // kom-i-gang-sec
   .kom-i-gang-sec {
-    padding: 119px 0 98px 0;
-    @include media-breakpoint-down(g) {
-      padding: 55px 0 68px 0;
+    padding: 60px 0 140px 0;
+    @include media-breakpoint-down(lg) {
+      padding: 0px 0 80px 0;
     }
 
     .area {
@@ -969,7 +969,7 @@ button {
       .title {
         width: 507px;
         margin: 0 auto;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         @include media-breakpoint-down(lg) {
           width: 100%;
         }
@@ -984,40 +984,49 @@ button {
         }
       }
       .btn {
-        margin-top: 105px;
+        margin-top: 20px;
         display: inline-block;
-        @include media-breakpoint-down(lg) {
-          margin-top: 35px;
-        }
+        border-radius: 6px;
       }
     }
   }
   // ========brand-logo======
   .brand-logo {
-    background: #f7f7f7;
-    padding-bottom: 70px;
-    padding-top: 275px;
+    padding-bottom: 60px;
+
     .area {
       .title {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
       }
       .logoes {
         display: grid;
-        grid-template-columns: repeat(5, 86px);
-        gap: 72px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
         justify-content: space-between;
         @include media-breakpoint-down(lg) {
-          grid-template-columns: repeat(4, 46px);
+          grid-template-columns: repeat(4, 1fr);
         }
         @include media-breakpoint-down(sm) {
-          grid-template-columns: repeat(3, 46px);
+          grid-template-columns: repeat(3, 1fr);
         }
 
         img {
           width: 86px;
           @include media-breakpoint-down(lg) {
             width: 46px;
+          }
+        }
+        .brand-img{
+          background: #f7f7f7;
+          height: 155px;
+          display: flex; 
+          align-items: center;
+          justify-content: center;
+          border-radius: 6px;
+          transition: all .3s ease;
+          &:hover{
+            background: #e0e0e0;
           }
         }
       }
