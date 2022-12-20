@@ -32,11 +32,22 @@ $(document).ready(function() {
   $(".mobile-topbar .sub-menu").click(function(){
     $(".mobile-topbar .sub-menu .nav-items").toggleClass("show");
   });
+  // hvilken active
+  $(".hvilken-items .item").click(function(){
+    $(this).toggleClass("active");
+  });
+  // btn-group-input active
+  $(".btn-group-input input").click(function(){
+    $(".btn-group-input input").removeClass("active")
+    $(this).toggleClass("active");
+  });
+  // list-of-input active
+  $(".list-of-input input").click(function(){
+    $(".list-of-input input").removeClass("active")
+    $(this).toggleClass("active");
+  });
   });
 
-
-
-  // 
   $(document).ready(function(){
     $('.accordion-list > li > .answer').hide();
     $('.accordion-list > li.active > .answer').show();
@@ -53,6 +64,9 @@ $(document).ready(function() {
     });
     
   });
+
+
+
   var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");

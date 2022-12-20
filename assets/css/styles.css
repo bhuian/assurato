@@ -82,6 +82,13 @@ p {
   margin: 0;
 }
 
+hr {
+  border: none;
+  height: 0.5px;
+  background: #eeeeee;
+  width: 100%;
+}
+
 li {
   list-style: none;
 }
@@ -139,6 +146,7 @@ button:focus {
   background: rgb(43, 224, 145);
   color: var(--white-color);
   font-size: 25px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -168,31 +176,39 @@ button:focus {
 }
 
 .sp-10 {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 
 .sp-15 {
-  margin-top: 15px;
+  margin-top: 15px !important;
 }
 
 .sp-20 {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .sp-30 {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 
 .sp-40 {
-  margin-top: 40px;
+  margin-top: 40px !important;
 }
 
 .sp-50 {
-  margin-top: 50px;
+  margin-top: 50px !important;
 }
 
 .sp-60 {
-  margin-top: 60px;
+  margin-top: 60px !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.m-0 {
+  margin: 0 !important;
 }
 
 .bg-primary {
@@ -346,6 +362,7 @@ button:focus {
   margin-bottom: 20px;
 }
 .assurato .header {
+  z-index: 999;
   position: relative;
 }
 .assurato .header .nav-bar {
@@ -385,7 +402,7 @@ button:focus {
   margin-left: 4px;
 }
 .assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu {
-  z-index: 999;
+  z-index: 99999;
   position: relative;
 }
 .assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items {
@@ -487,7 +504,7 @@ button:focus {
 }
 .assurato .header .nav-bar .appbar .appbar-area .mobile-topbar .nav-item.sub-menu .nav-items {
   display: none;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(255, 255, 255);
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin: 0;
@@ -803,6 +820,25 @@ button:focus {
 .assurato .main-screen .header .nav-bar .appbar .appbar-area .nav-brand {
   color: var(--white-color);
 }
+.assurato .main-screen .mobile-topbar {
+  margin: 0;
+}
+.assurato .main-screen .mobile-topbar .nav-item.sub-menu .fa-angle-down {
+  margin-left: 16px;
+}
+.assurato .main-screen .mobile-topbar .nav-item.sub-menu .nav-items {
+  display: none;
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 0;
+}
+.assurato .main-screen .mobile-topbar .nav-item.sub-menu .nav-items .nav-item .link {
+  color: var(--primary-color) !important;
+}
+.assurato .main-screen .mobile-topbar .nav-item.sub-menu .nav-items.show {
+  display: block;
+}
 .assurato .box-items {
   max-width: 916px;
   margin: 0 auto;
@@ -1032,7 +1068,7 @@ button:focus {
 }
 @media (max-width: 575.98px) {
   .assurato .brand-logo .area .logoes {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .assurato .brand-logo .area .logoes img {
@@ -1203,44 +1239,51 @@ button:focus {
   line-height: 22px;
   color: var(--white-color);
 }
-.assurato .start-search-screen .banner {
-  border-bottom: 1px solid var(--primary-color);
+.assurato .start-search-screen .header {
+  background: #e8f9fc;
 }
-@media (max-width: 767.98px) {
-  .assurato .start-search-screen .banner {
-    border: none;
-  }
+.assurato .start-search-screen .header .top-appbar {
+  background: #e8f9fc;
+}
+.assurato .start-search-screen .header .appbar {
+  background: #e8f9fc;
 }
 .assurato .start-search-screen .banner .banner-area {
-  padding-top: 215px;
+  padding-top: 203px;
+  text-align: center;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .assurato .start-search-screen .banner .banner-area {
-    text-align: center;
-    padding-top: 150px;
+    padding-top: 96px;
   }
 }
 .assurato .start-search-screen .banner .banner-area .title {
-  margin-bottom: 102px;
+  margin-bottom: 40px;
   color: var(--primary-color);
 }
 @media (max-width: 991.98px) {
   .assurato .start-search-screen .banner .banner-area .title {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 }
 .assurato .start-search-screen .banner .banner-area .btn {
   display: inline-block;
-  margin-bottom: 110px;
+  margin-bottom: 120px;
+  border-radius: 6px;
 }
 @media (max-width: 767.98px) {
   .assurato .start-search-screen .banner .banner-area .btn {
-    margin-bottom: 37px;
+    margin-bottom: 50px;
   }
 }
 .assurato .hvilken-sec {
   padding-top: 41px;
-  padding-bottom: 59px;
+  padding-bottom: 68px;
+}
+@media (max-width: 991.98px) {
+  .assurato .hvilken-sec {
+    padding-bottom: 38px;
+  }
 }
 .assurato .hvilken-sec .area .title {
   font-family: "Almarai";
@@ -1274,8 +1317,13 @@ button:focus {
   }
 }
 .assurato .hvilken-sec .area .btn-area {
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: center;
+}
+@media (max-width: 991.98px) {
+  .assurato .hvilken-sec .area .btn-area {
+    margin-top: 30px;
+  }
 }
 .assurato .hvilken-sec .area .btn-area .btn {
   display: inline-block;
@@ -1296,6 +1344,7 @@ button:focus {
   align-items: center;
   transition: all 0.3s ease-in;
   position: relative;
+  border-radius: 6px;
 }
 .assurato .hvilken-items .item .added {
   display: none;
@@ -1361,8 +1410,15 @@ button:focus {
 .assurato .user-form-sec .area .left .udfy {
   margin-bottom: 15px;
   margin-top: 40px;
+  display: block;
+}
+@media (max-width: 991.98px) {
+  .assurato .user-form-sec .area .left {
+    order: 2;
+  }
 }
 .assurato .user-form-sec .area .right {
+  order: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1374,16 +1430,6 @@ button:focus {
 }
 .assurato .user-form-sec .area .right .dis .text {
   margin-bottom: 22px;
-}
-.assurato .user-form-sec .area .under-acc-title {
-  font-family: "Almarai";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 43px;
-  color: #000000;
-  margin-bottom: 30px;
-  display: inline-block;
 }
 .assurato .form-card {
   background-color: #f7f7f7;
@@ -1527,7 +1573,12 @@ button:focus {
   }
 }
 .assurato .form-check {
-  margin-bottom: 48px;
+  padding-bottom: 65px;
+}
+@media (max-width: 575.98px) {
+  .assurato .form-check {
+    padding-bottom: 105px;
+  }
 }
 .assurato .form-check .dis h5 {
   font-family: "Almarai";
@@ -1542,11 +1593,10 @@ button:focus {
   font-size: 16px;
   line-height: 22px;
 }
-.assurato .btn-group {
-  margin-bottom: 40px;
+.assurato .btn-group-input {
   display: inline-block;
 }
-.assurato .btn-group input[type=button] {
+.assurato .btn-group-input input[type=button] {
   background: #ffffff;
   border: none;
   outline: none;
@@ -1560,37 +1610,38 @@ button:focus {
   padding-bottom: 13px;
   border: 1px solid #4770e5;
 }
-.assurato .btn-group input[type=button].active {
+.assurato .btn-group-input input[type=button].active {
   background: var(--primary-color);
   color: #ffffff;
 }
-.assurato .btn-group input[type=button]:first-child {
+.assurato .btn-group-input input[type=button]:first-child {
   border-right: none;
   border-radius: 6px 0px 0px 6px;
 }
-.assurato .btn-group input[type=button]:last-child {
+.assurato .btn-group-input input[type=button]:last-child {
   border-radius: 0px 6px 6px 0px;
   border-left: none;
 }
 .assurato .dk-input-group {
-  max-width: 177px;
+  width: 177px;
   display: flex;
-  border: 1px solid var(--primary-color);
   border-radius: 6px;
   overflow: hidden;
 }
-.assurato .dk-input-group .left {
+.assurato .dk-input-group .left-side {
   padding: 13px 8px 12px 8px;
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 .assurato .dk-input-group input[type=text] {
-  border: none;
   background: white;
   padding-left: 12px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid #eeeeee;
 }
 .assurato .dk-input-group input[type=text]:focus {
-  border: none;
+  border: 1px solid var(--primary-color);
   outline: none;
 }
 .assurato .dk-input-group ::-moz-placeholder {
@@ -1633,6 +1684,12 @@ button:focus {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 991.98px) {
+  .assurato .bottom-nav-btns {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
 .assurato .bottom-nav-btns .btn {
   font-family: "Almarai";
   font-weight: 700;
@@ -1649,47 +1706,6 @@ button:focus {
 }
 .assurato .bottom-nav-btns .btn.outline:hover {
   background: rgb(198, 233, 238);
-}
-.assurato input,
-.assurato .input {
-  width: 100%;
-  padding: 14px 20px;
-  border-radius: 6px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-}
-.assurato input:focus,
-.assurato .input:focus {
-  border: 1px solid var(--primary-color);
-  outline: none;
-}
-.assurato input::-moz-placeholder, .assurato .input::-moz-placeholder {
-  font-family: "Almarai";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #dddddd;
-  opacity: 1;
-}
-.assurato input:-ms-input-placeholder, .assurato .input:-ms-input-placeholder {
-  font-family: "Almarai";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #dddddd;
-  opacity: 1;
-}
-.assurato input::placeholder,
-.assurato .input::placeholder {
-  font-family: "Almarai";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #dddddd;
-  opacity: 1;
 }
 .assurato .date-input {
   display: flex;
@@ -1832,46 +1848,116 @@ button:focus {
     top: 35px;
   }
 }
-.assurato .icon-input-field {
-  position: relative;
-  border-radius: 6px;
+.assurato .general-info {
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
 }
-.assurato .icon-input-field label {
-  position: absolute;
-  left: 24px;
-  top: 50%;
-  transform: translateY(-50%);
+.assurato .general-info .header {
+  padding: 20px 40px;
+  background: #e8f9fc;
+  border-radius: 12px 12px 0px 0px;
 }
-.assurato .icon-input-field label svg {
-  color: #a4a4a4;
-  font-size: 15px;
+@media (max-width: 991.98px) {
+  .assurato .general-info .header {
+    padding: 20px;
+  }
 }
-.assurato .icon-input-field input {
-  padding-left: 50px;
-  padding-right: 24px;
-  background-color: #ffffff;
-}
-.assurato .icon-input-field input::-moz-placeholder {
-  color: #a4a4a4;
-  font-family: "Almarai";
+.assurato .general-info .header .title {
+  font-family: "Alata";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 40px;
+  line-height: 55px;
+  margin-bottom: 5px;
 }
-.assurato .icon-input-field input:-ms-input-placeholder {
-  color: #a4a4a4;
+@media (max-width: 991.98px) {
+  .assurato .general-info .header .title {
+    font-size: 24px;
+  }
+}
+.assurato .general-info .sub-header {
+  padding: 26px 40px;
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 767.98px) {
+  .assurato .general-info .sub-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .assurato .general-info .sub-header {
+    padding: 20px;
+  }
+}
+.assurato .general-info .sub-header h6 {
+  font-family: "Almarai";
+  font-weight: 400;
+  font-size: var(--normal-font-size);
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.assurato .general-info .sub-header p {
+  font-family: "Almarai";
+  font-weight: 400;
+  font-size: var(--normal-font-size);
+  line-height: 18px;
+  color: #cccccc;
+}
+.assurato .general-info .content {
+  padding: 40px;
+}
+@media (max-width: 991.98px) {
+  .assurato .general-info .content {
+    padding: 20px;
+  }
+}
+.assurato .general-info .form-check {
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+@media (max-width: 991.98px) {
+  .assurato .general-info .form-check {
+    padding-top: 20px;
+  }
+}
+.assurato .under-acc-title {
   font-family: "Almarai";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+  margin-bottom: 30px;
+  display: block;
 }
-.assurato .icon-input-field input::placeholder {
-  color: #a4a4a4;
-  font-family: "Almarai";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+@media (max-width: 991.98px) {
+  .assurato .under-acc-title {
+    font-size: 24px;
+  }
+}
+.assurato .start-search-screen-2 .dk-input-group,
+.assurato .start-search-screen-2 .input-width {
+  width: 347px !important;
+}
+@media (max-width: 767.98px) {
+  .assurato .start-search-screen-2 .dk-input-group,
+.assurato .start-search-screen-2 .input-width {
+    width: 100% !important;
+  }
+}
+.assurato .start-search-screen-2 .bottom-nav-btns {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+@media (max-width: 991.98px) {
+  .assurato .start-search-screen-2 .bottom-nav-btns {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+.assurato .gray-label {
+  color: #cccccc !important;
 }
