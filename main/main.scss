@@ -1,0 +1,494 @@
+@import "../include-media";
+@import "../constant";
+
+.assurato {
+  .main-screen {
+    width: 100%;
+    overflow-y: hidden;
+    .header {
+      background-image: url(../img/banner.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: var(--white-color);
+      .header-area {
+        background: rgba(18, 76, 117, 0.322);
+        .top-appbar {
+          border-color: rgba(255, 255, 255, .24);
+        }
+        .nav-item {
+          .link {
+            color: var(--white-color);
+          }
+        }
+      }
+      h1 {
+        color: var(--white-color);
+      }
+      .banner {
+        .banner-area {
+          padding-top: 215px;
+          text-align: center;
+          .dis {
+            margin-top: 15px;
+            font-size: 25px;
+            margin-bottom: 60px;
+            @include media-breakpoint-down(lg) {
+              font-size: 18px;
+            }
+          }
+          .ban-btn {
+            padding-top: 60px;
+            padding-bottom: 147px;
+            button {
+              width: 332px;
+              padding: 20px 25px;
+              background: rgba(43, 224, 145, 1);
+              color: var(--white-color);
+              font-size: 25px;
+              cursor: pointer;
+              border-radius: 6px;
+              transition: all 0.3s ease;
+              &:hover {
+                background: rgb(17, 185, 113);
+              }
+            }
+            @include media-breakpoint-down(md) {
+              padding-top: 40px;
+              padding-bottom: 50px;
+              button {
+                width: 160px;
+                padding: 17px 25px;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      .nav-bar {
+        z-index: 9999;
+        background: transparent;
+        @include media-breakpoint-down(lg) {
+          background: var(--primary-color);
+        }
+
+        @include media-breakpoint-down(lg) {
+          .link {
+            color: var(--white-color) !important;
+          }
+        }
+
+        .appbar {
+          // background: transparent;
+          .appbar-area {
+            background: transparent;
+            .bars {
+              svg {
+                color: var(--white-color);
+              }
+            }
+            .nav-brand {
+              color: var(--white-color);
+            }
+          }
+        }
+      }
+    }
+    .mobile-topbar {
+      // background-color: red;
+      margin: 0;
+      .nav-item {
+        &.sub-menu {
+          .fa-angle-down {
+            margin-left: 16px;
+          }
+          .nav-items {
+            display: none;
+            background-color: rgb(255, 255, 255) !important;
+            border-radius: 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin: 0;
+            .nav-item .link {
+              color: var(--primary-color) !important;
+            }
+            &.show {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  // box-items
+  .box-items {
+    max-width: 916px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 53px;
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .item {
+      padding: 42px;
+      background: var(--primary-color);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      transition: all 0.3s ease-in;
+      cursor: pointer;
+      &:hover {
+        background: #255bf1;
+      }
+      @include media-breakpoint-down(lg) {
+        padding: 30px 20px;
+      }
+
+      .icon {
+        margin-bottom: 14px;
+      }
+      .text {
+        font-size: 18px;
+      }
+    }
+  }
+  // ================= hreader-goes-sec ===========
+  .header-goes-sec {
+    text-align: center;
+    margin-top: 63px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 120px;
+    }
+
+    .header-goes-sec-area {
+      .title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 60px;
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 40px;
+        }
+      }
+      .card-items {
+        display: grid;
+        @include media-breakpoint-up(xl) {
+          grid-template-columns: repeat(3, 314px);
+          justify-content: space-between;
+        }
+        @include media-breakpoint-down(xl) {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+        }
+        @include media-breakpoint-down(md) {
+          grid-template-columns: repeat(1, 330px);
+          justify-content: center;
+        }
+        .item {
+          .avatar {
+            width: 69px;
+            height: 69px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+            svg {
+              color: var(--white-color);
+              font-size: 19px;
+            }
+            @include media-breakpoint-down(md) {
+              width: 59px;
+              height: 59px;
+            }
+          }
+          .card-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            @include media-breakpoint-down(lg) {
+              font-size: 18px;
+            }
+          }
+          .dis {
+            margin-top: 20px;
+          }
+        }
+      }
+      // img-items
+      .img-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 97px;
+        @include media-breakpoint-down(md) {
+          grid-template-columns: repeat(1, 1fr);
+          margin-top: 60px;
+        }
+
+        .item {
+          background: red;
+          position: relative;
+          .item-area {
+            height: 100%;
+            &::after {
+              content: "";
+              background-color: rgba(18, 76, 117, 0.26);
+              left: 0;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              position: absolute;
+              transition: all 0.3s ease-in;
+            }
+            &:hover::after {
+              background-color: rgba(18, 76, 117, 0.39);
+            }
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .img-title {
+            position: absolute;
+            font-weight: 400;
+            color: var(--white-color);
+            font-size: 30px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            z-index: 9;
+            @include media-breakpoint-down(lg) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // kom-i-gang-sec
+  .kom-i-gang-sec {
+    padding: 60px 0 140px 0;
+    @include media-breakpoint-down(lg) {
+      padding: 0px 0 80px 0;
+    }
+
+    .area {
+      text-align: center;
+      .title {
+        width: 507px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+      .dis {
+        width: 702px;
+        margin: 0 auto;
+        font-size: 25px;
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+      .btn {
+        margin-top: 20px;
+        display: inline-block;
+        border-radius: 6px;
+      }
+    }
+  }
+  // ========brand-logo======
+  .brand-logo {
+    padding-bottom: 60px;
+
+    .area {
+      .title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .logoes {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        justify-content: space-between;
+        @include media-breakpoint-down(lg) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        @include media-breakpoint-down(sm) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        img {
+          width: 86px;
+          @include media-breakpoint-down(lg) {
+            width: 46px;
+          }
+        }
+        .brand-img {
+          background: #f7f7f7;
+          height: 155px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 6px;
+          transition: all 0.3s ease;
+          &:hover {
+            background: #e0e0e0;
+          }
+        }
+      }
+    }
+  }
+  .sammenlign-sec {
+    padding-top: 120px;
+    padding-bottom: 140px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 60px;
+      padding-bottom: 70px;
+    }
+
+    .area {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @include media-breakpoint-down(lg) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .left {
+        padding-right: 90px;
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 40px;
+          padding-right: 0;
+        }
+
+        .title {
+          line-height: 47px !important;
+          margin-bottom: 30px;
+        }
+        .dis {
+          margin-bottom: 30px;
+        }
+        .btn {
+          border-radius: 6px;
+          display: inline-block;
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        gap: 35px;
+        @include media-breakpoint-down(lg) {
+          padding-left: 0;
+        }
+
+        .right-row {
+          display: flex;
+          align-items: center;
+
+          @include media-breakpoint-down(lg) {
+            flex-direction: row;
+            gap: 10px;
+          }
+
+          .avatar {
+            width: 69px;
+            height: 69px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            font-family: "Almarai";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 28px;
+            color: var(--white-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 54px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+              background: #255bf1;
+            }
+            @include media-breakpoint-down(lg) {
+              margin-right: 0;
+              width: 53px;
+              height: 53px;
+            }
+          }
+          .text {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+  // Double code Section
+  .double-code-sec {
+    margin-bottom: 140px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 40px;
+    }
+
+    .area {
+      display: flex;
+      gap: 35px;
+      @include media-breakpoint-down(lg) {
+        gap: 20px;
+      }
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+
+      .item {
+        background: var(--primary-color);
+        padding: 40px;
+        text-align: center;
+        border-radius: 12px;
+        color: var(--white-color);
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        &:hover {
+          background: #255bf1;
+        }
+        @include media-breakpoint-down(lg) {
+          padding: 54px 64px;
+        }
+
+        .dis {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          font-size: var(--normal-font-size);
+          @include media-breakpoint-down(lg) {
+            font-size: 16px;
+          }
+        }
+        .title {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+}

@@ -13,12 +13,12 @@
       src="https://kit.fontawesome.com/aee64c2cac.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/css/forms.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./forms.css" />
+    <link rel="stylesheet" href="./start_search.css" />
     <title>Start Search</title>
   </head>
   <body class="assurato">
-    <main class="start-search-screen">
+    <main class="start-search-screen start-search-screen-2">
       <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Navbar Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
       <!-- ++++ Header +++++ -->
       <div class="header">
@@ -319,158 +319,168 @@
         <div class="container">
           <div class="area">
             <div class="left">
+              <!-- timeline -->
               <div class="timeline-main">
                 <div class="timeline">
                   <ul class="area">
-                    <li class="item active">
+                    <li class="item active complete">
                       <span class="cus-line"></span> Forsikringsdetaljer
                     </li>
-                    <li class="item">
+                    <li class="item active">
                       <span class="cus-line"></span> Information
                     </li>
                     <li class="item">Indhent tilbud</li>
                   </ul>
                 </div>
               </div>
-              <div class="custom-accordion">
-                <ul class="accordion-list">
-                  <li class="active">
-                    <div class="acc-title">
-                      <h3>Bilforsikring</h3>
-                      <div class="avatar">
-                        <i class="fa-light fa-angle-down"></i>
+              <!--  -->
+              <div class="general-info">
+                <div class="header">
+                  <h3 class="title under-acc-title">General information</h3>
+                  <p class="dis">
+                    Tillægsinformation om dig som forsikringstager.
+                  </p>
+                </div>
+                <div class="content">
+                  <h3 class="content-title under-acc-title">
+                    Car insurance information
+                  </h3>
+                  <div class="content-area">
+                    <p>Hvor er du forsikret i dag?</p>
+                    <div class="custom-input-field">
+                      <div class="custom-select sp-15 input-width" id="se-1">
+                        <select>
+                          <option value="0">Vælg forsikringsselskab</option>
+                          <option value="1">Vælg forsikringsselskab</option>
+                          <option value="2">Russia</option>
+                          <option value="3">New York</option>
+                          <option value="4">Hong Kong</option>
+                          <option value="5">Spain</option>
+                        </select>
                       </div>
                     </div>
 
-                    <div class="answer">
-                      <h2 class="under-acc-title">Forsikringstype</h2>
-                      <div class="form-check">
-                        <input
-                          class="check-input"
-                          id="checkbox-1"
-                          type="checkbox"
-                          value="value1"
-                          checked
-                        />
-                        <label class="check-label" for="checkbox-1">
-                          <div class="dis">
-                            <h5>Ansvarsforsikring</h5>
-                            <p>
-                              Dynamically disintermediate intermandated
-                              infomediaries with holistic leadership
-                            </p>
-                          </div>
-                        </label>
+                    <p class="udfy">Antal voksne i husstanden</p>
+                    <div class="custom-input-field input-width">
+                      <div class="custom-select sp-15" id="se-1">
+                        <select>
+                          <option value="0">Vælg</option>
+                          <option value="1">Vælg</option>
+                          <option value="2">Russia</option>
+                          <option value="3">New York</option>
+                          <option value="4">Hong Kong</option>
+                          <option value="5">Spain</option>
+                        </select>
                       </div>
-                      <div class="form-check">
-                        <input
-                          class="check-input"
-                          id="checkbox-2"
-                          type="checkbox"
-                          value="value1"
-                          checked
-                        />
-                        <label class="check-label" for="checkbox-2">
-                          <div class="dis">
-                            <h5>Ansvarsforsikring</h5>
-                            <p>
-                              Dynamically disintermediate intermandated
-                              infomediaries with holistic leadership
-                            </p>
-                          </div>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="check-input"
-                          id="checkbox-3"
-                          type="checkbox"
-                          value="value1"
-                          checked
-                        />
-                        <label class="check-label" for="checkbox-3">
-                          <div class="dis">
-                            <h5>Ansvarsforsikring</h5>
-                            <p>
-                              Dynamically disintermediate intermandated
-                              infomediaries with holistic leadership
-                            </p>
-                          </div>
-                        </label>
-                      </div>
-                      <h2 class="under-acc-title sp-60">Om bilen</h2>
-                      <p>Kender du bilens registreringsnummer?</p>
-                      <div class="btn-group-input">
-                        <input value="Ja" type="button" class="active" />
-                        <input value="Nej" type="button" />
-                      </div>
-                      <p class="udfy">Udfyld registreringsnummeret</p>
-                      <div class="dk-input-group">
-                        <span class="left-side">DK</span>
-                        <input type="text" placeholder="NN 31 408" />
-                      </div>
+                    </div>
 
-                      <label for="demo-1" class="udfy"
-                        >Udfyld registreringsnummeret</label
-                      >
+                    <p class="udfy">Antal børn i husstanden</p>
+                    <div class="custom-input-field input-width">
+                      <div class="custom-select sp-15" id="se-1">
+                        <select>
+                          <option value="0">Vælg</option>
+                          <option value="1">Vælg</option>
+                          <option value="2">Russia</option>
+                          <option value="3">New York</option>
+                          <option value="4">Hong Kong</option>
+                          <option value="5">Spain</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- list of input -->
+                    <p class="udfy">Antal forsikringsskader de seneste 3 år</p>
+                    <div class="list-of-input">
+                      <input type="button" value="0" />
+                      <input class="active" type="button" value="1" />
+                      <input type="button" value="2" />
+                      <input type="button" value="3+" />
+                    </div>
+
+                    <p class="udfy">Antal forsikringsskader de seneste 3 år</p>
+                    <div class="btn-group-input">
+                      <input value="Ja" type="button" class="active" />
+                      <input value="Nej" type="button" />
+                    </div>
+
+                    <h3 class="under-acc-title sp-40">
+                      Dine kontaktoplysninger
+                    </h3>
+                    <!-- input    -->
+                    <div class="form-input input-width">
                       <input
-                        class="antal-input"
+                        class="input"
                         type="text"
-                        id="demo-1"
-                        placeholder="Ar"
+                        id="text-1"
+                        placeholder="Dit fulde navn"
                       />
                     </div>
-                  </li>
-                  <li>
-                    <div class="acc-title">
-                      <h3>Husforsikring</h3>
-                      <div class="avatar">
-                        <i class="fa-light fa-angle-down"></i>
-                      </div>
+                    <!-- date input -->
+                    <p class="udfy">Hvor er du forsikret i dag?</p>
+                    <div class="date-input">
+                      <input type="text" placeholder="DD" />
+                      <input type="text" placeholder="MM" />
+                      <input type="text" placeholder="YYYY" />
                     </div>
-                    <div class="answer">
-                      <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Incidunt atque odit deleniti accusamus laudantium
-                        ad minima sapiente dolores. Id, alias est illum tenetur
-                        accusantium libero enim. Voluptates facere aliquam
-                        pariatur? Eaque ipsa qui dolor laudantium sed
-                        accusantium, enim reiciendis minus molestias esse, harum
-                        odit distinctio libero neque. Perferendis, minus vitae!
-                      </p>
+                    <!-- input    -->
+                    <div class="form-input input-width">
+                      <label class="udfy" for="text-1">Adresse</label>
+                      <input
+                        class="input"
+                        type="text"
+                        id="text-1"
+                        placeholder="Indtast gaden/vejen du bor på"
+                      />
                     </div>
-                  </li>
-                  <li>
-                    <div class="acc-title">
-                      <h3>Rejseforsikring</h3>
-                      <div class="avatar">
-                        <i class="fa-light fa-angle-down"></i>
-                      </div>
+
+                    <!-- input row -->
+                    <div class="input-row sp-10 input-width">
+                      <input type="text" placeholder="Postnummer" />
+                      <input type="text" placeholder="By" />
                     </div>
-                    <div class="answer">
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Suscipit odit sint quibusdam? Unde repellendus vel
-                        soluta aliquid delectus provident aspernatur!
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Excepturi a repudiandae nihil unde necessitatibus itaque
-                        adipisci sunt, perspiciatis aut. Voluptatem,
-                        necessitatibus? Doloribus doloremque blanditiis
-                        repudiandae debitis culpa perferendis vero perspiciatis
-                        vel ratione possimus ut dignissimos dolor quisquam,
-                        aliquid nulla deserunt. Nulla voluptatem veritatis
-                        accusantium in, qui sed aperiam quidem aspernatur.
-                      </p>
+
+                    <!-- input    -->
+                    <div class="form-input input-width">
+                      <label class="udfy" for="email-1">E-mail</label>
+                      <input
+                        class="input"
+                        type="text"
+                        id="email-1"
+                        placeholder="Indtast din e-mail"
+                      />
                     </div>
-                  </li>
-                </ul>
+                    <!-- !footer -->
+                    <label for="telefonnummer" class="udfy"
+                      >Telefonnummer</label
+                    >
+                    <div class="dk-input-group input-width">
+                      <span class="left-side">+45</span>
+                      <input
+                        id="telefonnummer"
+                        type="text"
+                        placeholder="12 34 56 78"
+                      />
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="check-input"
+                        id="checkbox-11"
+                        type="checkbox"
+                        value="value1"
+                      />
+                      <label class="check-label" for="checkbox-11">
+                        Jeg acceptere....
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- Input Form -->
               <div class="bottom-nav-btns">
                 <a href="#" class="btn outline">Til top</a>
                 <a href="#" class="btn">Naeste</a>
               </div>
+              <!-- !++++++++  General information +++++++++ -->
             </div>
             <div class="right">
               <div class="dis">
@@ -509,6 +519,9 @@
         </div>
       </div>
       <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\ custom accordion \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+      <div class="custom-accordion-sec">
+        <div class="container"></div>
+      </div>
 
       <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Footer Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
       <footer class="footer">
@@ -563,11 +576,8 @@
           </div>
         </div>
       </footer>
-      <!-- ===========================    ================================ -->
-      <!-- ###########################    ################################ -->
-      <!-- ***************************    ******************************** -->
     </main>
     <!-- script -->
-    <script src="./assets/js/app.js"></script>
+    <script src="./start_search.js"></script>
   </body>
 </html>
