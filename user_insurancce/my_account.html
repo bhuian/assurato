@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/aee64c2cac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../form.css" />
+    <link rel="stylesheet" href="./user_insurancce.css" />
+    <title>Start Search</title>
+  </head>
+  <body class="assurato">
+    <main class="start-search-screen user_insurancce">
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Navbar Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <!-- ++++ Header +++++ -->
+      <div class="header">
+        <nav class="nav-bar">
+          <!-- Top Appbar -->
+          <div class="top-appbar">
+            <div class="container">
+              <ul class="nav-items">
+                <li class="nav-item"><a class="link" href="#">Support</a></li>
+                <li class="nav-item"><a class="link" href="#">Om</a></li>
+                <li class="nav-item"><a class="link" href="#">Blog</a></li>
+                <li class="nav-item sub-menu">
+                  <a class="link" href="#"
+                    >Login<i class="fa-regular fa-angle-down"></i
+                  ></a>
+                  <ul class="nav-items">
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Appbar -->
+          <div class="appbar">
+            <div class="container">
+              <div class="appbar-area">
+                <div class="nav-brand">
+                  <img src="./assets/img/assurato_primary.png" alt="assurato" />
+                  <span>Assurato</span>
+                </div>
+                <div class="bars">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-items">
+                  <li class="nav-item">
+                    <a class="link" href="#">Forsikringer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link" href="#">Anmeldelser</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link active" href="#">Få et tilbud</a>
+                  </li>
+                </ul>
+                <!-- Top Appbar -->
+                <ul class="nav-items lg-show mobile-topbar">
+                  <li class="nav-item"><a class="link" href="#">Support</a></li>
+                  <li class="nav-item"><a class="link" href="#">Om</a></li>
+                  <li class="nav-item"><a class="link" href="#">Blog</a></li>
+                  <li class="nav-item sub-menu">
+                    <a class="link" href="#"
+                      >Login<i class="fa-regular fa-angle-down"></i
+                    ></a>
+                    <ul class="nav-items">
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 2</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="banner">
+          <div class="container">
+            <div class="banner-area">
+              <h1 class="title">Insurance overview</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\ User Form Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <div class="user-form-sec">
+        <div class="container">
+          <div class="area">
+            <div class="left">
+              <!-- tab-nav -->
+              <div class="tab-nav">
+                <ul class="items">
+                  <li class="item">
+                    <a href="#" class="link active">My account</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" class="link">Mine forsikringer</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" class="link">Tidligere søgninger</a>
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+
+              <div class="general-info">
+                <div class="general-info-header">
+                  <h3 class="under-acc-title">General information</h3>
+                </div>
+                <div class="content">
+                  <div class="content-area">
+                    <!-- <h3 class="under-acc-title sp-40">
+                      Dine kontaktoplysninger
+                    </h3> -->
+                    <!-- input    -->
+                    <!-- date input -->
+                    <div class="two-col-input">
+                      <div class="form-input w100">
+                        <label class="udfy" for="input_id_101"
+                          >Fulde navn</label
+                        >
+                        <input
+                          class="input"
+                          type="text"
+                          id="input_id_101"
+                          placeholder="Dit fulde navn"
+                        />
+                      </div>
+                      <div class="w100">
+                        <label class="udfy" for="input_id_102">Adresse</label>
+                        <div class="date-input">
+                          <input
+                            type="text"
+                            id="input_id_102"
+                            placeholder="DD"
+                          />
+                          <input type="text" placeholder="MM" />
+                          <input type="text" placeholder="YYYY" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- input    -->
+                    <div class="form-input input-width">
+                      <label class="udfy" for="input_id_103">Adresse</label>
+                      <input
+                        class="input"
+                        type="text"
+                        id="input_id_103"
+                        placeholder="Indtast gaden/vejen du bor på"
+                      />
+                    </div>
+                    <!-- input row -->
+                    <div class="input-row sp-10 input-width">
+                      <input type="text" placeholder="Postnummer" />
+                      <input type="text" placeholder="By" />
+                    </div>
+
+                    <!-- input    -->
+
+                    <div class="two-col-input">
+                      <div class="form-input w100">
+                        <label class="udfy" for="email-1">E-mail</label>
+                        <input
+                          class="input"
+                          type="text"
+                          id="email-1"
+                          placeholder="Indtast din e-mail"
+                        />
+                      </div>
+                      <div class="w100">
+                        <label for="telefonnummer" class="udfy"
+                          >Telefonnummer</label
+                        >
+                        <div class="dk-input-group w100">
+                          <span class="left-side">+45</span>
+                          <input
+                            id="telefonnummer"
+                            type="text"
+                            placeholder="12 34 56 78"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="under-acc-title sp-60">Password</h3>
+                    <label class="udfy" for="pass_1"
+                      >Current password (leave blank to leave unchanged)</label
+                    >
+                    <div class="password_input">
+                      <div class="pass_icon">
+                       
+                      </div>
+                      <input id="pass_1" type="password" value="demopass"/>
+                    </div>
+                    <label class="udfy" for="pass_2"
+                      >New password (leave blank to leave unchanged)</label
+                    >
+                    <div class="password_input">
+                      <div class="pass_icon"></div>
+                      <input id="pass_2" type="password" />
+                    </div>
+                    <label class="udfy" for="pass_3"
+                      >Confirm new password</label
+                    >
+                    <div class="password_input">
+                      <div class="pass_icon"></div>
+                      <input id="pass_3" type="password" />
+                    </div>
+                    <!-- !footer -->
+                  </div>
+                </div>
+              </div>
+              <!-- Input Form -->
+              <div class="bottom-nav-btns">
+                <a href="#" class="btn">Gem ændringer</a>
+              </div>
+              <!-- !++++++++  General information +++++++++ -->
+            </div>
+            <div class="right">
+              <div class="dis">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                  malesuada sed enim cras tortor. Consequat arcu pellentesque
+                  enim at hac .
+                </p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                  malesuada sed enim cras tortor. Consequat arcu pellentesque
+                  enim at hac .
+                </p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                  malesuada sed enim cras tortor. Consequat arcu pellentesque
+                  enim at hac .Lorem ipsum dolor sit amet consectetur. Nunc
+                  pulvinar malesuada sed enim cras tortor. Consequat arcu
+                  pellentesque enim at hac .
+                </p>
+              </div>
+              <div class="form-card">
+                <p class="card-text">Annonce</p>
+              </div>
+              <div class="form-card">
+                <p class="card-text">Annonce</p>
+              </div>
+              <div class="form-card">
+                <p class="card-text">Annonce</p>
+              </div>
+              <div class="form-card">
+                <p class="card-text">Annonce</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\ custom accordion \\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+      <div class="custom-accordion-sec">
+        <div class="container"></div>
+      </div>
+
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Footer Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-area">
+            <!-- 1 -->
+            <div class="footer-item brand-footer">
+              <a href="#"><img src="./assets/img/assurato.png" alt="" /></a>
+            </div>
+            <!-- 2 -->
+            <div class="footer-item">
+              <ul>
+                <li><a href="#" class="link">Om os</a></li>
+                <li><a href="#" class="link">Anmeldelser</a></li>
+                <li><a href="#" class="link">Support</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Kontakt os</a></li>
+                <li><a href="#" class="link">Login</a></li>
+              </ul>
+            </div>
+            <!-- 3 -->
+            <div class="footer-item">
+              <ul>
+                <li><a href="#" class="link">Privatlivspolitik</a></li>
+                <li><a href="#" class="link">Handelsbetingelser</a></li>
+              </ul>
+            </div>
+            <!-- 4 -->
+            <div class="footer-item social-icon">
+              <ul>
+                <li><a href="#" class="link">Facebook</a></li>
+                <li><a href="#" class="link">Instagra</a></li>
+                <li><a href="#" class="link">LinkedIn</a></li>
+                <li><a href="#" class="link">TikTok</a></li>
+              </ul>
+            </div>
+            <!-- 5 -->
+            <div class="footer-item">
+              <ul>
+                <li>Assurato ApS</li>
+                <li>Svanevej 22</li>
+                <li>2400 København NV</li>
+              </ul>
+              <ul>
+                <li><a href="#" class="link">+45 12 34 56 78</a></li>
+                <li><a href="#" class="link">mail@assurato.dk</a></li>
+              </ul>
+              <ul>
+                <li><a href="#" class="link">CVR: 12345678</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- script -->
+    <script src="./user_insurancce.js"></script>
+  </body>
+</html>

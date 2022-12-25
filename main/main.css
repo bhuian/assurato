@@ -181,6 +181,10 @@ button:focus {
   margin-top: 10px !important;
 }
 
+.sp-12 {
+  margin-top: 12px !important;
+}
+
 .sp-15 {
   margin-top: 15px !important;
 }
@@ -257,6 +261,50 @@ button:focus {
   .lg-show {
     display: none !important;
   }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jcc {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w-20 {
+  width: 20px;
+}
+
+.w-2 {
+  width: 2px;
+}
+
+.w-10 {
+  width: 10px;
+}
+
+.w-15 {
+  width: 15px;
+}
+
+.w-105 {
+  width: 105px !important;
+}
+
+.w-170 {
+  width: 170px;
 }
 
 .container,
@@ -415,12 +463,21 @@ button:focus {
   min-width: 130px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background: var(--white-color);
+  border-radius: 6px;
 }
-.assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items .nav-item .link {
-  padding: 12px 15px;
+.assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items .nav-item:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
-.assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items .nav-item .link:hover {
+.assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items .nav-item:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items .nav-item:hover {
   background: var(--primary-color);
+  color: #ffffff;
+}
+.assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu .nav-items .nav-item:hover .link {
   color: #ffffff;
 }
 .assurato .header .nav-bar .top-appbar .nav-items .nav-item.sub-menu:hover .nav-items {
@@ -443,6 +500,7 @@ button:focus {
   display: flex;
   align-items: center;
   color: var(--primary-color);
+  cursor: pointer;
 }
 .assurato .header .nav-bar .appbar .appbar-area .nav-brand img {
   width: 26.11px;
@@ -483,10 +541,12 @@ button:focus {
   margin-left: 2px;
   transition: all 0.3s ease-in-out;
   display: inline-block;
+  border-radius: 6px;
 }
 .assurato .header .nav-bar .appbar .appbar-area .nav-items .nav-item .link.active, .assurato .header .nav-bar .appbar .appbar-area .nav-items .nav-item .link:hover {
   background: var(--primary-color);
   color: var(--white-color);
+  border-radius: 6px;
 }
 @media (max-width: 991.98px) {
   .assurato .header .nav-bar .appbar .appbar-area .nav-items .nav-item .link {
@@ -839,6 +899,14 @@ button:focus {
 }
 .assurato .main-screen .mobile-topbar .nav-item.sub-menu .nav-items.show {
   display: block;
+}
+.assurato .title-sp {
+  padding-bottom: 83px;
+}
+@media (max-width: 991.98px) {
+  .assurato .title-sp {
+    padding-bottom: 40px;
+  }
 }
 .assurato .box-items {
   max-width: 916px;
@@ -1713,12 +1781,24 @@ button:focus {
 .assurato .bottom-nav-btns .btn.outline:hover {
   background: rgb(198, 233, 238);
 }
+.assurato .two-col-input {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 991.98px) {
+  .assurato .two-col-input {
+    flex-direction: column;
+  }
+  .assurato .two-col-input .udfy {
+    margin-top: 0 !important;
+  }
+}
 .assurato .date-input {
   display: flex;
   gap: 5px;
 }
 .assurato .date-input input {
-  padding: 12px;
+  padding: 14px 12px 14px 12px;
   width: 48px;
 }
 .assurato .date-input input::-moz-placeholder {
@@ -1886,7 +1966,7 @@ button:focus {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .assurato .general-info .sub-header {
     flex-direction: column;
     gap: 20px;
@@ -1966,6 +2046,20 @@ button:focus {
 }
 .assurato .gray-label {
   color: #cccccc !important;
+}
+.assurato .password_input {
+  position: relative;
+}
+.assurato .password_input .pass_icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+}
+.assurato .password_input .pass_icon svg {
+  color: #A4A4A4;
 }
 
 .assurato .main-screen {

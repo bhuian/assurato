@@ -2062,191 +2062,321 @@ button:focus {
   color: #A4A4A4;
 }
 
-.assurato .login-screen .header {
-  background: #e8f9fc;
-}
-.assurato .login-screen .header .nav-bar {
-  background: #e8f9fc;
-}
-@media (max-width: 991.98px) {
-  .assurato .login-screen .header .nav-bar {
-    background: #e8f9fc;
-  }
-}
-.assurato .login-screen .banner {
-  padding: 30px 0 118px 0;
-}
-@media (max-width: 991.98px) {
-  .assurato .login-screen .banner {
-    padding: 20px 0 40px 0;
-  }
-}
-.assurato .login-screen .banner .banner-area {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 90px auto;
-  margin-bottom: 0;
-}
-@media (min-width: 992px) {
-  .assurato .login-screen .banner .banner-area {
-    width: 60%;
-    text-align: center;
-  }
-}
-.assurato .login-screen .banner .banner-area .title {
+.assurato .user_insurancce .tab-nav {
+  border-bottom: 1px solid #dddddd;
   margin-bottom: 40px;
-  color: var(--primary-color);
 }
 @media (max-width: 991.98px) {
-  .assurato .login-screen .banner .banner-area .title {
-    margin-bottom: 15px;
+  .assurato .user_insurancce .tab-nav {
+    margin-bottom: 30px;
+    border: none;
   }
 }
-.assurato .login-screen .banner .banner-area .dis {
-  margin-bottom: 20px;
-}
-.assurato .login-med-main {
-  margin-bottom: 97px;
+.assurato .user_insurancce .tab-nav .items {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 @media (max-width: 991.98px) {
-  .assurato .login-med-main {
+  .assurato .user_insurancce .tab-nav .items {
+    flex-direction: column;
+  }
+}
+.assurato .user_insurancce .tab-nav .items .item .link {
+  padding: 15px 25px;
+  display: inline-block;
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (max-width: 991.98px) {
+  .assurato .user_insurancce .tab-nav .items .item .link {
+    padding: 7px 25px;
+    padding-left: 0;
+  }
+}
+.assurato .user_insurancce .tab-nav .items .item .link.active {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #4770e5;
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .assurato .user_insurancce .tab-nav .items .item .link.active {
+    padding-left: 12px;
+  }
+}
+.assurato .user_insurancce .tab-nav .items .item .link.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -3px;
+  background-color: var(--primary-color);
+}
+@media (max-width: 991.98px) {
+  .assurato .user_insurancce .tab-nav .items .item .link.active::after {
+    width: 3px;
+    height: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 991.98px) {
+  .assurato .user_insurancce .banner .banner-area {
+    padding-top: 86px;
+  }
+}
+.assurato .user_insurancce .banner .banner-area .title {
+  font-family: "Alata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  padding-bottom: 83px;
+}
+@media (max-width: 991.98px) {
+  .assurato .user_insurancce .banner .banner-area .title {
+    padding-bottom: 40px;
+  }
+}
+.assurato .user_insurancce .user-form-sec .area .left .bottom-nav-btns {
+  margin-top: 0;
+  margin-bottom: 120px;
+}
+@media (max-width: 991.98px) {
+  .assurato .user_insurancce .user-form-sec .area .left .bottom-nav-btns {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 991.98px) {
-  .assurato .login-med-main .login-med-area .login-med-header {
-    position: relative;
-  }
-  .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns.show {
-    display: block;
-  }
+.assurato .user_insurancce .general-info {
+  border: none;
 }
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-top {
-  height: 55px;
-  background: var(--primary-color);
-  color: var(--white-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  cursor: pointer;
+.assurato .user_insurancce .general-info .content {
+  padding-left: 0;
 }
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-top:hover {
-  background: #386af3;
+.assurato .user_insurancce .general-info .content .content-area .date-input input::-moz-placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #dddddd;
 }
-@media (min-width: 992px) {
-  .assurato .login-med-main .login-med-area .login-med-header .login-med-header-top {
-    display: none;
-  }
+.assurato .user_insurancce .general-info .content .content-area .date-input input:-ms-input-placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #dddddd;
 }
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-top .login-med-select {
-  margin-right: 5px;
+.assurato .user_insurancce .general-info .content .content-area .date-input input::placeholder {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #dddddd;
 }
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-top svg {
-  font-size: 10px;
+.assurato .user_insurancce .general-info .content .content-area .udfy {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
 }
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-top:hover {
-  background: #386af3;
+.assurato .custom-accordion.user-acc .accordion-list li {
+  border-radius: 12px !important;
+  border: none !important;
+  margin-bottom: 10px;
 }
-@media (max-width: 991.98px) {
-  .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns {
-    position: absolute;
-    width: 100%;
-    top: 57px;
-    display: none;
-    z-index: 9;
-  }
+.assurato .custom-accordion.user-acc .accordion-list li .answer {
+  padding: 30px;
 }
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 991.98px) {
-  .assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul {
-    flex-direction: column;
-  }
-}
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li {
-  background: var(--white-color);
-  padding-top: 22px;
-  padding-bottom: 24px;
-  width: 100%;
-  text-align: center;
-  border: 1px solid #f7f7f7;
-  color: var(--primary-color);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li:nth-child(2) {
-  border-right: none;
-}
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li.active {
-  border: 1px solid var(--primary-color);
-  background: var(--primary-color);
-  color: var(--white-color);
-}
-.assurato .login-med-main .login-med-area .login-med-header .login-med-header-btns ul li:hover {
-  border: 1px solid #356afd;
-  background: #356afd;
-  color: var(--white-color);
-}
-.assurato .login-med-main .login-med-area .login-med-footer {
-  margin-top: 127px;
-  display: none;
-}
-@media (max-width: 991.98px) {
-  .assurato .login-med-main .login-med-area .login-med-footer {
-    margin-top: 60px;
-  }
-}
-.assurato .login-med-main .login-med-area .login-med-footer.show {
-  display: block;
-}
-.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area {
-  display: flex;
-  gap: 128px;
-}
-@media (max-width: 1399.98px) {
-  .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area {
-    gap: 80px;
-  }
-}
-@media (max-width: 991.98px) {
-  .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area {
-    flex-direction: column;
-    gap: 40px;
-  }
-}
-.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left {
-  width: 100%;
-  background: #f7f7f7;
-  padding: 80px;
-  border-radius: 12px;
-}
-@media (max-width: 1199.98px) {
-  .assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left {
-    padding: 40px;
-  }
-}
-.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left input[type=button] {
-  background: #2be091;
+.assurato .custom-accordion.user-acc .accordion-list li .answer .acc-row-title {
   font-family: "Almarai";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+  color: #333333;
+}
+.assurato .custom-accordion.user-acc .accordion-list li .answer .acc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.assurato .custom-accordion.user-acc .accordion-list li .answer .acc-row .acc-row-text {
+  margin-bottom: 0;
+  color: #333333;
+}
+@media (max-width: 991.98px) {
+  .assurato .custom-accordion.user-acc .accordion-list li .answer {
+    padding: 20px;
+  }
+}
+.assurato .custom-accordion.user-acc .accordion-list li .answer .tidligere-ans-row {
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 991.98px) {
+  .assurato .custom-accordion.user-acc .accordion-list li .answer .tidligere-ans-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.assurato .custom-accordion.user-acc .accordion-list li .answer .tidligere-ans-row .tidligere-ans-left {
+  width: 400px;
+}
+@media (max-width: 991.98px) {
+  .assurato .custom-accordion.user-acc .accordion-list li .answer .tidligere-ans-row .tidligere-ans-left {
+    flex-basis: auto;
+  }
+}
+.assurato .custom-accordion.user-acc .accordion-list li .answer .tidligere-ans-row .tidligere-ans-left h5 {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.assurato .custom-accordion.user-acc .accordion-list li .answer .tidligere-ans-row .tidligere-ans-right h5 {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.assurato .custom-accordion.user-acc .accordion-list li.active {
+  border: 1px solid #eeeeee !important;
+}
+.assurato .custom-accordion.user-acc .accordion-list li.active .acc-title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 1px solid #eeeeee;
+}
+.assurato .custom-accordion.user-acc .accordion-list .acc-title {
+  background: #e8f9fc;
+  padding: 20px 30px;
+  border-radius: 12px;
+  gap: 4px;
+}
+@media (max-width: 991.98px) {
+  .assurato .custom-accordion.user-acc .accordion-list .acc-title {
+    padding: 20px;
+  }
+}
+.assurato .custom-accordion.user-acc .accordion-list .acc-title .acc-title-area {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+@media (max-width: 991.98px) {
+  .assurato .custom-accordion.user-acc .accordion-list .acc-title .acc-title-area {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1399.98px) {
+  .assurato .custom-accordion.user-acc .accordion-list .acc-title .acc-title-area.extra-lg {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.assurato .custom-accordion.user-acc .accordion-list .acc-title .acc-title-area .acc-title-start h4 {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.assurato .custom-accordion.user-acc .accordion-list .acc-title .acc-title-area .acc-title-start p {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.assurato .custom-accordion.user-acc .accordion-list .acc-title .acc-title-area .acc-title-mid {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.assurato .custom-accordion.user-acc .accordion-list .acc-title .acc-title-area .acc-title-end {
+  padding-right: 20px;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--primary-color);
+}
+.assurato .custom-accordion.user-acc .accordion-list .acc-title .avatar {
+  background-color: white;
   transition: all 0.3s ease;
 }
-.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .left input[type=button]:hover {
-  background: #23f59a;
+.assurato .custom-accordion.user-acc .accordion-list .acc-title .avatar svg {
+  color: var(--primary-color);
 }
-.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .right .text {
+.assurato .custom-accordion.user-acc .accordion-list .active .acc-title .avatar {
+  background-color: var(--primary-color);
+}
+.assurato .custom-accordion.user-acc .accordion-list .active .acc-title .avatar svg {
+  color: white;
+}
+.assurato .accordion-main-title {
+  font-family: "Alata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  color: #000000;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
-.assurato .login-med-main .login-med-area .login-med-footer .login-med-footer-area .right .text:last-child {
-  margin-bottom: 0;
+.assurato .acc-mark-row {
+  display: flex;
+  align-items: center;
+}
+.assurato .acc-mark-row .icon-area {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.assurato .acc-mark-row .icon-area svg {
+  color: white;
+  font-size: 13px;
+}
+.assurato .acc-mark-row .text-area {
+  margin-left: 12px;
 }
