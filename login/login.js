@@ -31,7 +31,6 @@ $(document).ready(function () {
   $(".mobile-topbar .sub-menu").click(function () {
     $(".mobile-topbar .sub-menu .nav-items").toggleClass("show");
   });
-
 });
 
 $(document).ready(function () {

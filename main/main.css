@@ -765,10 +765,14 @@ button:focus {
 .assurato .footer .footer-area .footer-item ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-left: 0;
   padding-bottom: 3px;
   margin: 0;
+}
+@media (max-width: 991.98px) {
+  .assurato .footer .footer-area .footer-item ul {
+    align-items: center;
+  }
 }
 .assurato .footer .footer-area .footer-item ul li {
   color: var(--white-color);
@@ -2079,8 +2083,10 @@ button:focus {
 .assurato .main-screen .header .header-area .top-appbar {
   border-color: rgba(255, 255, 255, 0.24);
 }
-.assurato .main-screen .header .header-area .nav-item .link {
-  color: var(--white-color);
+@media (min-width: 992px) {
+  .assurato .main-screen .header .header-area .nav-item.sub-menu .nav-items .nav-item .link {
+    color: #255bf1;
+  }
 }
 .assurato .main-screen .header h1 {
   color: var(--white-color);
@@ -2302,7 +2308,6 @@ button:focus {
   }
 }
 .assurato .header-goes-sec .header-goes-sec-area .img-items .item {
-  background: red;
   position: relative;
 }
 .assurato .header-goes-sec .header-goes-sec-area .img-items .item .item-area {

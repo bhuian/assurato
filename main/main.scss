@@ -17,9 +17,21 @@
           border-color: rgba(255, 255, 255, .24);
         }
         .nav-item {
-          .link {
-            color: var(--white-color);
+          &.sub-menu{
+            .nav-items{
+              .nav-item{
+                .link {
+                  @include media-breakpoint-up(lg) {
+                    color: #255bf1;
+                  }
+                  
+                }
+              }
+            }
+           
           }
+           
+         
         }
       }
       h1 {
@@ -238,7 +250,6 @@
         }
 
         .item {
-          background: red;
           position: relative;
           .item-area {
             height: 100%;

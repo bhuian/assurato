@@ -765,10 +765,14 @@ button:focus {
 .assurato .footer .footer-area .footer-item ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-left: 0;
   padding-bottom: 3px;
   margin: 0;
+}
+@media (max-width: 991.98px) {
+  .assurato .footer .footer-area .footer-item ul {
+    align-items: center;
+  }
 }
 .assurato .footer .footer-area .footer-item ul li {
   color: var(--white-color);
