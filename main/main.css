@@ -1709,7 +1709,7 @@ button:focus {
   width: 100%;
 }
 .assurato .check-row.form-check .check-input + .check-label:before {
-  top: 25px !important;
+  top: 16px !important;
 }
 .assurato .check-row.form-check .check-input:checked + .check-label:before {
   background: rgb(71, 112, 229);
