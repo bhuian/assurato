@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 100){
+        $('.appbar').addClass('sticky')
+    } else{
+        $('.appbar').removeClass('sticky')
+    }
+  });
+  
   $(".dropdown-menu").click(function () {
     $(this).toggleClass("show");
   });
@@ -9,33 +17,9 @@ $(document).ready(function () {
     $(".appbar").toggleClass("show");
     $(".appbar").toggleClass("shadow");
   });
-  $(".login-med-header").click(function () {
-    $(".login-med-header-btns").toggleClass("show");
-  });
-  $(".login-med-header-btns ul li").click(function () {
-    var medText = $(this).text();
-    $(".login-med-select").text(medText);
-    $(".login-med-header-btns ul li").removeClass("active");
-    $(this).addClass("active");
-  });
-  $(".login-med-mit-id").click(function () {
-    $("#med-mit-id").addClass("show");
-    $("#med-e-mail").removeClass("show");
-    $("#med-ind").removeClass("show");
-  });
-  $(".login-med-e-mail").click(function () {
-    $("#med-mit-id").removeClass("show");
-    $("#med-e-mail").addClass("show");
-    $("#med-ind").removeClass("show");
-  });
-  $(".login-med-ind").click(function () {
-    $("#med-mit-id").removeClass("show");
-    $("#med-e-mail").removeClass("show");
-    $("#med-ind").addClass("show");
-  });
   //  top appbar
   $(".mobile-topbar .sub-menu").click(function () {
-    $(".mobile-topbar .sub-menu .nav-items").toggleClass("show");
+    $(this).children(".nav-items").toggleClass("show");
   });
   // hvilken active
   $(".hvilken-items .item").click(function () {

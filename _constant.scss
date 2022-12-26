@@ -256,6 +256,13 @@ button {
 .w-170{
   width: 170px;
 }
+.mb-120{
+  margin-bottom: 120px !important;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 60px !important;
+  }
+  
+}
 // ============================
 // ********* Container ********
 // ============================
@@ -315,7 +322,12 @@ button {
     max-width: 1320px;
   }
 }
-
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%
+}
 // ============================
 // ******* Main SCSS ********
 // ============================
@@ -443,9 +455,14 @@ button {
       }
       // app bar
       .appbar {
-        &.shadow {
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        &.sticky{
+          background-color:  #E8F9FC;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+          
         }
+        // &.shadow {
+        //   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        // }
         .appbar-area {
           display: flex;
           justify-content: space-between;
@@ -777,123 +794,6 @@ button {
     }
   }
   // main Screen
-  .main-screen {
-    width: 100%;
-    overflow-y: hidden;
-    .header {
-      background-image: url(../img/banner.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      color: var(--white-color);
-      .header-area {
-        background: rgba(18, 76, 117, 0.322);
-        .top-appbar {
-          border-color: rgba(255, 255, 255, 0.24);
-        }
-        .nav-item {
-          .link {
-            color: var(--white-color);
-          }
-        }
-      }
-      h1 {
-        color: var(--white-color);
-      }
-      .banner {
-        .banner-area {
-          padding-top: 215px;
-          text-align: center;
-          .dis {
-            margin-top: 15px;
-            font-size: 25px;
-            margin-bottom: 60px;
-            @include media-breakpoint-down(lg) {
-              font-size: 18px;
-            }
-          }
-          .ban-btn {
-            padding-top: 60px;
-            padding-bottom: 147px;
-            button {
-              width: 332px;
-              padding: 20px 25px;
-              background: rgba(43, 224, 145, 1);
-              color: var(--white-color);
-              font-size: 25px;
-              cursor: pointer;
-              border-radius: 6px;
-              transition: all 0.3s ease;
-              &:hover {
-                background: rgb(17, 185, 113);
-              }
-            }
-            @include media-breakpoint-down(md) {
-              padding-top: 40px;
-              padding-bottom: 50px;
-              button {
-                width: 160px;
-                padding: 17px 25px;
-                font-size: 16px;
-              }
-            }
-          }
-        }
-      }
-      .nav-bar {
-        z-index: 9999;
-        background: transparent;
-        @include media-breakpoint-down(lg) {
-          background: var(--primary-color);
-        }
-
-        @include media-breakpoint-down(lg) {
-          .link {
-            color: var(--white-color) !important;
-          }
-        }
-
-        .appbar {
-          // background: transparent;
-          .appbar-area {
-            background: transparent;
-            .bars {
-              svg {
-                color: var(--white-color);
-              }
-            }
-            .nav-brand {
-              color: var(--white-color);
-            }
-          }
-        }
-      }
-    }
-    .mobile-topbar {
-      // background-color: red;
-      margin: 0;
-      .nav-item {
-        &.sub-menu {
-          .fa-angle-down {
-            margin-left: 16px;
-          }
-          .nav-items {
-            display: none;
-            background-color: rgb(255, 255, 255) !important;
-            border-radius: 6px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            margin: 0;
-            .nav-item .link {
-              color: var(--primary-color) !important;
-            }
-            &.show {
-              display: block;
-            }
-          }
-        }
-      }
-    }
-  }
   .title-sp{
     padding-bottom: 83px;
     @include media-breakpoint-down(lg) {
@@ -1459,6 +1359,7 @@ button {
           padding: 40px;
           background-color: #f7f7f7;
           margin-bottom: 10px;
+          border-radius: 6px;
           .text {
             margin-bottom: 22px;
           }
