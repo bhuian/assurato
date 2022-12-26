@@ -1709,13 +1709,13 @@ button:focus {
   width: 100%;
 }
 .assurato .check-row.form-check .check-input + .check-label:before {
-  top: 16px;
+  top: 25px !important;
 }
 .assurato .check-row.form-check .check-input:checked + .check-label:before {
   background: rgb(71, 112, 229);
 }
 .assurato .check-row.form-check .check-input:checked + .check-label:after {
-  top: 25px;
+  top: 25px !important;
 }
 .assurato .check-row .dis-row {
   display: flex;
@@ -1767,13 +1767,13 @@ button:focus {
 }
 @media (max-width: 575.98px) {
   .assurato .check-row.form-check .check-input + .check-label:before {
-    top: 26px;
+    top: 26px !important;
   }
   .assurato .check-row.form-check .check-input:checked + .check-label:before {
     background: rgb(71, 112, 229);
   }
   .assurato .check-row.form-check .check-input:checked + .check-label:after {
-    top: 35px;
+    top: 35px !important;
   }
 }
 .assurato .general-info {

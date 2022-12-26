@@ -1630,13 +1630,13 @@ button {
     display: inline-block;
     width: 100%;
     &.form-check .check-input + .check-label:before {
-      top: 16px;
+      top: 25px !important;
     }
     &.form-check .check-input:checked + .check-label:before {
       background: rgb(71, 112, 229);
     }
     &.form-check .check-input:checked + .check-label:after {
-      top: 25px;
+      top: 25px !important;
     }
     .dis-row {
       .img {
@@ -1687,13 +1687,13 @@ button {
     }
     @include media-breakpoint-down(sm) {
       &.form-check .check-input + .check-label:before {
-        top: 26px;
+        top: 26px !important;
       }
       &.form-check .check-input:checked + .check-label:before {
         background: rgb(71, 112, 229);
       }
       &.form-check .check-input:checked + .check-label:after {
-        top: 35px;
+        top: 35px !important;
       }
     }
   }
