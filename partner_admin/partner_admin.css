@@ -73,7 +73,7 @@ body {
   margin: 0;
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
-  color: var(--gray-100);
+  color: #333333;
   background-color: var(--body-color);
   letter-spacing: -0.009em;
 }
@@ -120,6 +120,7 @@ h1 {
   .h1,
 h1 {
     font-size: 36px;
+    line-height: 43px;
   }
 }
 
@@ -460,6 +461,7 @@ button:focus {
   padding-bottom: 15px;
   display: inline-block;
   width: 100%;
+  color: #333333;
 }
 .assurato .header .nav-bar .top-appbar .nav-items .nav-item .link:hover {
   color: #507fff;
@@ -559,6 +561,7 @@ button:focus {
   transition: all 0.3s ease-in-out;
   display: inline-block;
   border-radius: 6px;
+  color: #333333;
 }
 .assurato .header .nav-bar .appbar .appbar-area .nav-items .nav-item .link.active, .assurato .header .nav-bar .appbar .appbar-area .nav-items .nav-item .link:hover {
   background: var(--primary-color);
@@ -822,45 +825,6 @@ button:focus {
     padding-bottom: 40px;
   }
 }
-.assurato .box-items {
-  max-width: 916px;
-  margin: 0 auto;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 53px;
-}
-@media (max-width: 991.98px) {
-  .assurato .box-items {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-}
-.assurato .box-items .item {
-  padding: 42px;
-  background: var(--primary-color);
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  transition: all 0.3s ease-in;
-  cursor: pointer;
-}
-.assurato .box-items .item:hover {
-  background: #255bf1;
-}
-@media (max-width: 991.98px) {
-  .assurato .box-items .item {
-    padding: 30px 20px;
-  }
-}
-.assurato .box-items .item .icon {
-  margin-bottom: 14px;
-}
-.assurato .box-items .item .text {
-  font-size: 18px;
-}
 .assurato .header-goes-sec {
   text-align: center;
   margin-top: 63px;
@@ -993,43 +957,6 @@ button:focus {
   .assurato .header-goes-sec .header-goes-sec-area .img-items .item .img-title {
     font-size: 20px;
   }
-}
-.assurato .kom-i-gang-sec {
-  padding: 60px 0 140px 0;
-}
-@media (max-width: 991.98px) {
-  .assurato .kom-i-gang-sec {
-    padding: 0px 0 80px 0;
-  }
-}
-.assurato .kom-i-gang-sec .area {
-  text-align: center;
-}
-.assurato .kom-i-gang-sec .area .title {
-  width: 507px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-@media (max-width: 991.98px) {
-  .assurato .kom-i-gang-sec .area .title {
-    width: 100%;
-  }
-}
-.assurato .kom-i-gang-sec .area .dis {
-  width: 702px;
-  margin: 0 auto;
-  font-size: 25px;
-}
-@media (max-width: 991.98px) {
-  .assurato .kom-i-gang-sec .area .dis {
-    width: 100%;
-    font-size: 16px;
-  }
-}
-.assurato .kom-i-gang-sec .area .btn {
-  margin-top: 20px;
-  display: inline-block;
-  border-radius: 6px;
 }
 .assurato .brand-logo {
   padding-bottom: 60px;
@@ -2127,6 +2054,9 @@ button:focus {
 .assurato .desh-notifications .desh-bottom-title .desh-bottom-title-icon {
   display: flex;
   align-items: center;
+}
+.assurato .desh-notifications .desh-bottom-title .desh-bottom-title-icon p {
+  color: #333333;
 }
 .assurato .desh-notifications .desh-bottom-title .desh-bottom-title-icon p b {
   font-family: "Almarai";

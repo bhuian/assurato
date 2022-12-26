@@ -25,6 +25,7 @@ $(document).ready(function () {
   });
 
   $(".login-med-mit-id").click(function () {
+    $(".login-med-footer").removeClass("show");
     $("#med-mit-id").addClass("show");
   });
   $(".login-med-e-mail").click(function () {

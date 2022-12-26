@@ -70,7 +70,7 @@ body {
   margin: 0;
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
-  color: var(--gray-100);
+  color:  #333333;
   background-color: var(--body-color);
   letter-spacing: -0.009em;
 }
@@ -108,6 +108,7 @@ h1 {
   line-height: 74.4px;
   @include media-breakpoint-down(lg) {
     font-size: 36px;
+    line-height: 43px;
   }
 }
 .h2,
@@ -406,6 +407,7 @@ button {
               padding-bottom: 15px;
               display: inline-block;
               width: 100%;
+              color:#333333;
               &:hover {
                 color: #507fff;
               }
@@ -515,6 +517,7 @@ button {
                 transition: all 0.3s ease-in-out;
                 display: inline-block;
                 border-radius: 6px;
+                color:#333333;
                 &.active,
                 &:hover {
                   background: var(--primary-color);
@@ -801,43 +804,6 @@ button {
     }
     
   }
-  // box-items
-  .box-items {
-    max-width: 916px;
-    margin: 0 auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 53px;
-    @include media-breakpoint-down(lg) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-    .item {
-      padding: 42px;
-      background: var(--primary-color);
-      border-radius: 12px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: start;
-      transition: all 0.3s ease-in;
-      cursor: pointer;
-      &:hover {
-        background: #255bf1;
-      }
-      @include media-breakpoint-down(lg) {
-        padding: 30px 20px;
-      }
-
-      .icon {
-        margin-bottom: 14px;
-      }
-      .text {
-        font-size: 18px;
-      }
-    }
-  }
   // ================= hreader-goes-sec ===========
   .header-goes-sec {
     text-align: center;
@@ -958,39 +924,6 @@ button {
             }
           }
         }
-      }
-    }
-  }
-  // kom-i-gang-sec
-  .kom-i-gang-sec {
-    padding: 60px 0 140px 0;
-    @include media-breakpoint-down(lg) {
-      padding: 0px 0 80px 0;
-    }
-
-    .area {
-      text-align: center;
-      .title {
-        width: 507px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        @include media-breakpoint-down(lg) {
-          width: 100%;
-        }
-      }
-      .dis {
-        width: 702px;
-        margin: 0 auto;
-        font-size: 25px;
-        @include media-breakpoint-down(lg) {
-          width: 100%;
-          font-size: 16px;
-        }
-      }
-      .btn {
-        margin-top: 20px;
-        display: inline-block;
-        border-radius: 6px;
       }
     }
   }
