@@ -70,7 +70,7 @@ body {
   margin: 0;
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
-  color:  #333333;
+  color: #333333;
   background-color: var(--body-color);
   letter-spacing: -0.009em;
 }
@@ -156,7 +156,7 @@ button {
 .sp-10 {
   margin-top: 10px !important;
 }
-.sp-12{
+.sp-12 {
   margin-top: 12px !important;
 }
 .sp-15 {
@@ -223,46 +223,41 @@ button {
 .d-flex {
   display: flex;
 }
-.jcc{
+.jcc {
   justify-content: space-between;
 }
-.aic{
+.aic {
   align-items: center;
 }
 .w100 {
   width: 100% !important;
 }
-.w50{
+.w50 {
   width: 50%;
 }
-.w-20{
+.w-20 {
   width: 20px;
-
 }
-.w-2{
+.w-2 {
   width: 2px;
-
 }
-.w-10{
+.w-10 {
   width: 10px;
-
 }
-.w-15{
+.w-15 {
   width: 15px;
-
 }
-.w-105{
+.w-105 {
   width: 105px !important;
 }
-.w-170{
+.w-170 {
   width: 170px;
 }
-.mb-120{
+.mb-120 {
   margin-bottom: 120px !important;
   @include media-breakpoint-down(lg) {
     margin-bottom: 60px !important;
   }
-  
 }
 // ============================
 // ********* Container ********
@@ -323,11 +318,11 @@ button {
     max-width: 1320px;
   }
 }
-.sticky{
+.sticky {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%
+  width: 100%;
 }
 // ============================
 // ******* Main SCSS ********
@@ -407,7 +402,7 @@ button {
               padding-bottom: 15px;
               display: inline-block;
               width: 100%;
-              color:#333333;
+              color: #333333;
               &:hover {
                 color: #507fff;
               }
@@ -457,10 +452,9 @@ button {
       }
       // app bar
       .appbar {
-        &.sticky{
-          background-color:  #E8F9FC;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-          
+        &.sticky {
+          background-color: #e8f9fc;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
         }
         // &.shadow {
         //   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
@@ -517,7 +511,7 @@ button {
                 transition: all 0.3s ease-in-out;
                 display: inline-block;
                 border-radius: 6px;
-                color:#333333;
+                color: #333333;
                 &.active,
                 &:hover {
                   background: var(--primary-color);
@@ -755,14 +749,14 @@ button {
         ul {
           display: flex;
           flex-direction: column;
-        
+
           padding-left: 0;
           padding-bottom: 3px;
           margin: 0;
           @include media-breakpoint-down(lg) {
             align-items: center;
           }
-          
+
           li {
             color: var(--white-color);
             line-height: 19px;
@@ -797,12 +791,11 @@ button {
     }
   }
   // main Screen
-  .title-sp{
+  .title-sp {
     padding-bottom: 83px;
     @include media-breakpoint-down(lg) {
       padding-bottom: 40px;
     }
-    
   }
   // ================= hreader-goes-sec ===========
   .header-goes-sec {
@@ -1798,19 +1791,18 @@ button {
   .gray-label {
     color: #cccccc !important;
   }
-  .password_input{
+  .password_input {
     position: relative;
-    .pass_icon{
+    .pass_icon {
       position: absolute;
-      right:20px;
+      right: 20px;
       top: 50%;
       width: 20px;
       height: 20px;
-     transform: translateY(-50%);
-     svg{
-      color: #A4A4A4;
-     }
+      transform: translateY(-50%);
+      svg {
+        color: #a4a4a4;
+      }
     }
   }
-
 }

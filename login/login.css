@@ -502,7 +502,7 @@ button:focus {
   display: block;
 }
 .assurato .header .nav-bar .appbar.sticky {
-  background-color: #E8F9FC;
+  background-color: #e8f9fc;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 .assurato .header .nav-bar .appbar .appbar-area {
@@ -1901,7 +1901,7 @@ button:focus {
   transform: translateY(-50%);
 }
 .assurato .password_input .pass_icon svg {
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
 
 .assurato .login-screen .header {
