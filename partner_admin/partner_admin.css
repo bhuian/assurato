@@ -1942,6 +1942,11 @@ button:focus {
   display: flex;
   gap: 60px;
 }
+@media (max-width: 1399.98px) {
+  .assurato .dashboard-main .dashboard-area {
+    gap: 20px;
+  }
+}
 @media (max-width: 991.98px) {
   .assurato .dashboard-main .dashboard-area {
     gap: 40px;
@@ -2001,7 +2006,6 @@ button:focus {
   color: var(--primary-color);
 }
 .assurato .desh-notifications {
-  padding: 30px;
   border: 1px solid #eeeeee;
   box-shadow: 0px 2px 30px 4px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
@@ -2089,6 +2093,9 @@ button:focus {
   overflow-x: auto;
   width: 100%;
 }
+.assurato .inbox-table {
+  padding: 30px;
+}
 @media (max-width: 991.98px) {
   .assurato .inbox-table {
     min-width: 700px;
@@ -2164,8 +2171,9 @@ button:focus {
 .assurato .check-dropdown {
   display: flex;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 30px;
+  justify-content: center;
 }
 .assurato .check-dropdown svg {
   transform: rotate(180deg);
@@ -2211,36 +2219,62 @@ button:focus {
   display: block;
 }
 .assurato .table-area-notifications {
-  padding: 15px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #eeeeee;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.assurato .table-area-notifications:first-child {
+  padding-top: 24px;
+}
+.assurato .table-area-notifications:last-child {
+  border-bottom: none;
 }
 .assurato .table-area-notifications .form-check {
   padding-bottom: 0;
 }
 .assurato .table-area-notifications .table-row {
-  padding: 15px 0;
+  cursor: pointer;
+  flex-grow: 1;
 }
 .assurato .table-area-notifications .table-row .table-cols {
-  display: grid;
   justify-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  display: flex;
 }
 .assurato .table-area-notifications .table-row .table-cols .table-reported {
   font-weight: 700;
   font-size: 16px;
 }
+.assurato .cus2-checkbox {
+  margin-right: 10px;
+}
+.assurato .cus2-checkbox.checkbox-head {
+  margin-right: -11px;
+}
+.assurato .cus2-checkbox input {
+  width: 16px;
+  height: 16px;
+}
 .assurato .table-area {
   padding: 15px 0;
   border-bottom: 1px solid #eeeeee;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.assurato .table-area .cus2-checkbox {
+  margin-right: 10px;
+}
+.assurato .table-area .cus2-checkbox input {
+  width: 16px;
+  height: 16px;
 }
 .assurato .table-area:last-child {
   border: none;
 }
 .assurato .table-area .table-row {
-  padding: 15px 0;
+  flex-grow: 1;
 }
 .assurato .table-area .table-row .table-cols {
   display: grid;
@@ -2294,6 +2328,7 @@ button:focus {
 }
 .assurato .table-cols-header-main .id-img {
   width: 30px;
+  margin-left: 4px;
 }
 .assurato .table-cols-header-main .table-cols-header {
   display: grid;
@@ -2326,6 +2361,19 @@ button:focus {
 }
 .assurato .table-notifications-main {
   width: 100%;
+}
+.assurato .table-notifications-main .btn-area {
+  text-align: end;
+}
+.assurato .table-notifications-main .btn-area .btn {
+  padding: 12px 20px;
+  margin-top: 30px;
+  align-items: flex-end;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
 }
 @media (max-width: 991.98px) {
   .assurato .table-notifications-main {

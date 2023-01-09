@@ -5,4 +5,5 @@
         // "savePath": "./assets/css"
     }],
     "editor.formatOnSave": true,
+    "liveServer.settings.CustomBrowser": "firefox"
 }

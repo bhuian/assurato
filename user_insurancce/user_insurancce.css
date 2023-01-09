@@ -2038,7 +2038,6 @@ button:focus {
 }
 .assurato .custom-accordion.user-acc .accordion-list li {
   border-radius: 12px !important;
-  border: none !important;
   margin-bottom: 10px;
 }
 .assurato .custom-accordion.user-acc .accordion-list li .answer {
@@ -2111,13 +2110,13 @@ button:focus {
 .assurato .custom-accordion.user-acc .accordion-list li.active .acc-title {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-bottom: 1px solid #eeeeee;
 }
 .assurato .custom-accordion.user-acc .accordion-list .acc-title {
   background: #e8f9fc;
   padding: 20px 30px;
   border-radius: 12px;
   gap: 4px;
+  transition: all 0.9s;
 }
 @media (max-width: 991.98px) {
   .assurato .custom-accordion.user-acc .accordion-list .acc-title {

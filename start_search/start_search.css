@@ -2446,20 +2446,35 @@ button:focus {
   background: var(--primary-color);
   color: var(--white-color);
 }
+.assurato .cus2-check {
+  display: flex;
+  align-items: center;
+}
+.assurato .cus2-check input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
 .assurato .check-row {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 100%;
 }
-.assurato .check-row.form-check .check-input + .check-label:before {
-  top: 16px;
+.assurato .check-row .check-area {
+  margin-right: 10px;
 }
-.assurato .check-row.form-check .check-input:checked + .check-label:before {
-  background: rgb(71, 112, 229);
+.assurato .check-row .check-area input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
-.assurato .check-row.form-check .check-input:checked + .check-label:after {
-  top: 25px;
+.assurato .check-row .dis-row-label {
+  display: flex;
+  flex-grow: 1;
 }
 .assurato .check-row .dis-row {
+  flex-grow: 1;
   display: flex;
   align-items: center;
 }

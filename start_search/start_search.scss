@@ -511,19 +511,38 @@
       }
     }
   }
+  .cus2-check{
+    display: flex;
+    align-items: center;
+    input[type="checkbox"]{
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
   .check-row {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    // background: green;
+
     width: 100%;
-    &.form-check .check-input + .check-label:before {
-      top: 16px;
+    .check-area{
+      margin-right: 10px;
+      input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
     }
-    &.form-check .check-input:checked + .check-label:before {
-      background: rgb(71, 112, 229);
-    }
-    &.form-check .check-input:checked + .check-label:after {
-      top: 25px;
+
+    .dis-row-label{
+      display: flex;
+      flex-grow: 1;
     }
     .dis-row {
+      flex-grow: 1;
+
       .img {
         width: 54px;
         height: 54px;
