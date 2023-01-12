@@ -100,6 +100,12 @@
             }
           }
         }
+        .right{
+          @include media-breakpoint-down(lg) {
+            padding-bottom: 30px;
+          }
+          
+        }
       }
     }
     .general-info {
