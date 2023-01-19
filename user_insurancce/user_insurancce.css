@@ -1912,7 +1912,7 @@ button:focus {
   border-bottom: 1px solid #dddddd;
   margin-bottom: 40px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .assurato .user_insurancce .tab-nav {
     margin-bottom: 30px;
     border: none;
@@ -1923,9 +1923,20 @@ button:focus {
   padding: 0;
   display: flex;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .assurato .user_insurancce .tab-nav .items {
     flex-direction: column;
+    gap: 6px;
+  }
+}
+.assurato .user_insurancce .tab-nav .items .item {
+  flex-grow: 1;
+}
+@media (max-width: 575.98px) {
+  .assurato .user_insurancce .tab-nav .items .item {
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    overflow: hidden;
   }
 }
 .assurato .user_insurancce .tab-nav .items .item .link {
@@ -1936,10 +1947,12 @@ button:focus {
   font-size: 16px;
   line-height: 22px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .assurato .user_insurancce .tab-nav .items .item .link {
-    padding: 7px 25px;
+    padding: 14px 20px;
     padding-left: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 .assurato .user_insurancce .tab-nav .items .item .link.active {
@@ -1950,7 +1963,7 @@ button:focus {
   color: #4770e5;
   position: relative;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .assurato .user_insurancce .tab-nav .items .item .link.active {
     padding-left: 12px;
   }
@@ -1961,15 +1974,12 @@ button:focus {
   width: 100%;
   height: 4px;
   left: 0;
-  bottom: -3px;
+  bottom: -2px;
   background-color: var(--primary-color);
 }
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .assurato .user_insurancce .tab-nav .items .item .link.active::after {
-    width: 3px;
-    height: 36px;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0px;
   }
 }
 @media (max-width: 991.98px) {

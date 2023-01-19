@@ -9,7 +9,7 @@
     .tab-nav {
       border-bottom: 1px solid #dddddd;
       margin-bottom: 40px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(sm) {
         margin-bottom: 30px;
         border: none;
       }
@@ -18,11 +18,20 @@
         margin: 0;
         padding: 0;
         display: flex;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(sm) {
           flex-direction: column;
+          
+          gap: 6px;
         }
 
         .item {
+          flex-grow: 1;
+          @include media-breakpoint-down(sm) {
+            border: 1px solid #EEEEEE;
+            border-radius: 4px;
+            overflow: hidden;
+          }
+          
           .link {
             padding: 15px 25px;
             display: inline-block;
@@ -30,9 +39,11 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 22px;
-            @include media-breakpoint-down(lg) {
-              padding: 7px 25px;
+            @include media-breakpoint-down(sm) {
+              padding: 14px 20px;
               padding-left: 0;
+              width: 100%;
+              text-align: center;
             }
 
             &.active {
@@ -42,7 +53,7 @@
               text-align: center;
               color: #4770e5;
               position: relative;
-              @include media-breakpoint-down(lg) {
+              @include media-breakpoint-down(sm) {
                 padding-left: 12px;
               }
 
@@ -52,13 +63,10 @@
                 width: 100%;
                 height: 4px;
                 left: 0;
-                bottom: -3px;
+                bottom: -2px;
                 background-color: var(--primary-color);
-                @include media-breakpoint-down(lg) {
-                  width: 3px;
-                  height: 36px;
-                  top: 50%;
-                  transform: translateY(-50%);
+                @include media-breakpoint-down(sm) {
+                  bottom: 0px;
                 }
               }
             }
