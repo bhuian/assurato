@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/aee64c2cac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./forms.css" />
+    <link rel="stylesheet" href="./start_search.css" />
+    <title>Start Search</title>
+  </head>
+  <body class="assurato">
+    <main class="start-search-screen">
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Navbar Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <!-- ++++ Header +++++ -->
+      <div class="header">
+        <nav class="nav-bar">
+          <!-- Top Appbar -->
+          <div class="top-appbar">
+            <div class="container">
+              <ul class="nav-items">
+                <li class="nav-item"><a class="link" href="#">Support</a></li>
+                <li class="nav-item"><a class="link" href="#">Om</a></li>
+                <li class="nav-item"><a class="link" href="#">Blog</a></li>
+                <li class="nav-item sub-menu">
+                  <a class="link" href="#"
+                    >Login<i class="fa-regular fa-angle-down"></i
+                  ></a>
+                  <ul class="nav-items">
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Appbar -->
+          <div class="appbar">
+            <div class="container">
+              <div class="appbar-area">
+                <div class="nav-brand">
+                  <img src="./assets/img/assurato_primary.svg" alt="assurato" />
+                  <span>Assurato</span>
+                </div>
+                <div class="bars">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-items">
+                  <li class="nav-item">
+                    <a class="link" href="#">Forsikringer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link" href="#">Anmeldelser</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link active" href="#">Få et tilbud</a>
+                  </li>
+                </ul>
+                <!-- Top Appbar -->
+                <ul class="nav-items lg-show mobile-topbar">
+                  <li class="nav-item"><a class="link" href="#">Support</a></li>
+                  <li class="nav-item"><a class="link" href="#">Om</a></li>
+                  <li class="nav-item"><a class="link" href="#">Blog</a></li>
+                  <li class="nav-item sub-menu">
+                    <a class="link" href="#"
+                      >Login<i class="fa-regular fa-angle-down"></i
+                    ></a>
+                    <ul class="nav-items">
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 2</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="banner">
+          <div class="container">
+            <div class="banner-area">
+              <h1 class="title">Login to get the most out of Assurato</h1>
+              <a href="#" class="btn">Log in to get the most out of Assurato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Hvilken Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <div class="hvilken-sec">
+        <div class="container">
+          <div class="area">
+            <p class="title">Hvilken type forsikring vil du sammenligne?</p>
+            <div class="hvilken-items">
+              <div class="item active">
+                <img
+                  class="r-icon"
+                  src="./assets/img/laptop_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/flight_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/home_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/car_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/laptop_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/flight_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/home_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/car_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/laptop_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/flight_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/home_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  class="r-icon"
+                  src="./assets/img/car_primary.svg"
+                  alt="laptop"
+                />
+                <p class="dis">Bilforsikring</p>
+                <div class="avatar ml-auto">
+                  <img class="add" src="./assets/img/add.svg" alt="img" />
+                  <img
+                    class="added"
+                    src="./assets/img/check_alt_.svg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="btn-area">
+              <a href="#" class="btn">Sammenlign valgte forsikringer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\ User Form Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <div class="user-form-sec">
+        <div class="container">
+          <div class="area">
+            <div class="left">
+              <div class="timeline-main">
+                <div class="timeline">
+                  <ul class="area">
+                    <li class="item active">
+                      <span class="cus-line"></span> Forsikringsdetaljer
+                    </li>
+                    <li class="item">
+                      <span class="cus-line"></span> Information
+                    </li>
+                    <li class="item">Indhent tilbud</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="custom-accordion">
+                <ul class="accordion-list">
+                  <li class="active">
+                    <div class="acc-title">
+                      <h3>Bilforsikring</h3>
+                      <div class="avatar">
+                        <i class="fa-light fa-angle-down"></i>
+                      </div>
+                    </div>
+
+                    <div class="answer">
+                      <h2 class="under-acc-title">Forsikringstype</h2>
+                      <div class="form-check">
+                        <input
+                          class="check-input"
+                          id="checkbox-1"
+                          type="checkbox"
+                          value="value1"
+                          checked
+                        />
+                        <label class="check-label" for="checkbox-1">
+                          <div class="dis">
+                            <h5>Ansvarsforsikring</h5>
+                            <p>
+                              Dynamically disintermediate intermandated
+                              infomediaries with holistic leadership
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="check-input"
+                          id="checkbox-2"
+                          type="checkbox"
+                          value="value1"
+                          checked
+                        />
+                        <label class="check-label" for="checkbox-2">
+                          <div class="dis">
+                            <h5>Ansvarsforsikring</h5>
+                            <p>
+                              Dynamically disintermediate intermandated
+                              infomediaries with holistic leadership
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="check-input"
+                          id="checkbox-3"
+                          type="checkbox"
+                          value="value1"
+                          checked
+                        />
+                        <label class="check-label" for="checkbox-3">
+                          <div class="dis">
+                            <h5>Ansvarsforsikring</h5>
+                            <p>
+                              Dynamically disintermediate intermandated
+                              infomediaries with holistic leadership
+                            </p>
+                          </div>
+                        </label>
+                      </div>
+                      <h2 class="under-acc-title sp-60">Om bilen</h2>
+                      <p>Kender du bilens registreringsnummer?</p>
+                      <div class="btn-group-input">
+                        <input value="Ja" type="button" class="active" />
+                        <input value="Nej" type="button" />
+                      </div>
+                      <p class="udfy">Udfyld registreringsnummeret</p>
+                      <div class="dk-input-group">
+                        <span class="left-side">DK</span>
+                        <input type="text" placeholder="NN 31 408" />
+                      </div>
+
+                      <label for="demo-1" class="udfy"
+                        >Udfyld registreringsnummeret</label
+                      >
+                      <input
+                        class="antal-input"
+                        type="text"
+                        id="demo-1"
+                        placeholder="Ar"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="acc-title">
+                      <h3>Husforsikring</h3>
+                      <div class="avatar">
+                        <i class="fa-light fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="answer">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Incidunt atque odit deleniti accusamus laudantium
+                        ad minima sapiente dolores. Id, alias est illum tenetur
+                        accusantium libero enim. Voluptates facere aliquam
+                        pariatur? Eaque ipsa qui dolor laudantium sed
+                        accusantium, enim reiciendis minus molestias esse, harum
+                        odit distinctio libero neque. Perferendis, minus vitae!
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="acc-title">
+                      <h3>Rejseforsikring</h3>
+                      <div class="avatar">
+                        <i class="fa-light fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="answer">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Suscipit odit sint quibusdam? Unde repellendus vel
+                        soluta aliquid delectus provident aspernatur!
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Excepturi a repudiandae nihil unde necessitatibus itaque
+                        adipisci sunt, perspiciatis aut. Voluptatem,
+                        necessitatibus? Doloribus doloremque blanditiis
+                        repudiandae debitis culpa perferendis vero perspiciatis
+                        vel ratione possimus ut dignissimos dolor quisquam,
+                        aliquid nulla deserunt. Nulla voluptatem veritatis
+                        accusantium in, qui sed aperiam quidem aspernatur.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom-nav-btns">
+                <a href="#" class="btn outline">Til top</a>
+                <a href="#" class="btn">Naeste</a>
+              </div>
+            </div>
+            <div class="right">
+              <div class="dis">
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                  malesuada sed enim cras tortor. Consequat arcu pellentesque
+                  enim at hac .
+                </p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                  malesuada sed enim cras tortor. Consequat arcu pellentesque
+                  enim at hac .
+                </p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                  malesuada sed enim cras tortor. Consequat arcu pellentesque
+                  enim at hac .Lorem ipsum dolor sit amet consectetur. Nunc
+                  pulvinar malesuada sed enim cras tortor. Consequat arcu
+                  pellentesque enim at hac .
+                </p>
+              </div>
+              <div class="form-card">
+                <p class="card-text">Annonce</p>
+              </div>
+              <div class="form-card">
+                <p class="card-text">Annonce</p>
+              </div>
+              <div class="form-card">
+                <p class="card-text">Annonce</p>
+              </div>
+              <div class="form-card">
+                <p class="card-text">Annonce</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Footer Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-area">
+            <!-- 1 -->
+            <div class="footer-item brand-footer">
+              <a href="#"><img src="./assets/img/assurato.svg" alt="" /></a>
+            </div>
+            <!-- 2 -->
+            <div class="footer-item">
+              <ul>
+                <li><a href="#" class="link">Om os</a></li>
+                <li><a href="#" class="link">Anmeldelser</a></li>
+                <li><a href="#" class="link">Support</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Kontakt os</a></li>
+                <li><a href="#" class="link">Login</a></li>
+              </ul>
+            </div>
+            <!-- 3 -->
+            <div class="footer-item">
+              <ul>
+                <li><a href="#" class="link">Privatlivspolitik</a></li>
+                <li><a href="#" class="link">Handelsbetingelser</a></li>
+              </ul>
+            </div>
+            <!-- 4 -->
+            <div class="footer-item social-icon">
+              <ul>
+                <li><a href="#" class="link">Facebook</a></li>
+                <li><a href="#" class="link">Instagra</a></li>
+                <li><a href="#" class="link">LinkedIn</a></li>
+                <li><a href="#" class="link">TikTok</a></li>
+              </ul>
+            </div>
+            <!-- 5 -->
+            <div class="footer-item">
+              <ul>
+                <li>Assurato ApS</li>
+                <li>Svanevej 22</li>
+                <li>2400 København NV</li>
+              </ul>
+              <ul>
+                <li><a href="#" class="link">+45 12 34 56 78</a></li>
+                <li><a href="#" class="link">mail@assurato.dk</a></li>
+              </ul>
+              <ul>
+                <li><a href="#" class="link">CVR: 12345678</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- script -->
+    <script src="./start_search.js"></script>
+  </body>
+</html>

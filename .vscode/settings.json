@@ -2,7 +2,8 @@
     "liveSassCompile.settings.formats": [{
         "format": "expanded",
         "extensionName": ".css",
-        "savePath": "./assets/css"
+        // "savePath": "./assets/css"
     }],
     "editor.formatOnSave": true,
+    // "liveServer.settings.CustomBrowser": "firefox"
 }

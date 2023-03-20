@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/aee64c2cac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./forms.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Document</title>
+  </head>
+  <body class="assurato">
+    <main class="login-screen">
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Navbar Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <!-- ++++ Header +++++ -->
+      <div class="header">
+        <nav class="nav-bar">
+          <!-- Top Appbar -->
+          <div class="top-appbar">
+            <div class="container">
+              <ul class="nav-items">
+                <li class="nav-item"><a class="link" href="#">Support</a></li>
+                <li class="nav-item"><a class="link" href="#">Om</a></li>
+                <li class="nav-item"><a class="link" href="#">Blog</a></li>
+                <li class="nav-item sub-menu">
+                  <a class="link" href="#"
+                    >Login<i class="fa-regular fa-angle-down"></i
+                  ></a>
+                  <ul class="nav-items">
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="link">Demo 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Appbar -->
+          <div class="appbar">
+            <div class="container">
+              <div class="appbar-area">
+                <div class="nav-brand">
+                  <img src="./assets/img/assurato_primary.svg" alt="assurato" />
+                  <span>Assurato</span>
+                </div>
+                <div class="bars">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-items">
+                  <li class="nav-item">
+                    <a class="link" href="#">Forsikringer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link" href="#">Anmeldelser</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link active" href="#">Få et tilbud</a>
+                  </li>
+                </ul>
+                <!-- Top Appbar -->
+                <ul class="nav-items lg-show mobile-topbar">
+                  <li class="nav-item"><a class="link" href="#">Support</a></li>
+                  <li class="nav-item"><a class="link" href="#">Om</a></li>
+                  <li class="nav-item"><a class="link" href="#">Blog</a></li>
+                  <li class="nav-item sub-menu">
+                    <a class="link" href="#"
+                      >Login<i class="fa-regular fa-angle-down"></i
+                    ></a>
+                    <ul class="nav-items">
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="link">Demo 2</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="banner">
+          <div class="container">
+            <div class="banner-area">
+              <h1 class="title">Login to get the most out of Assurato</h1>
+              <p class="dis">
+                Lorem ipsum dolor sit amet consectetur. Nunc pulvinar malesuada
+                sed enim cras tortor. Consequat arcu pellentesque enim at hac
+              </p>
+              <p class="dis">
+                Lorem ipsum dolor sit amet consectetur. Nunc pulvinar malesuada
+                sed enim cras tortor. Consequat arcu pellentesque enim at hac
+                .Lorem ipsum dolor sit amet consectetur. Nunc pulvinar malesuada
+                sed enim cras tortor. Consequat arcu pellentesque enim at hac .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Navbar Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <div class="login-med-main">
+        <div class="login-med-area">
+          <div class="login-med-header">
+            <div class="login-med-header-top">
+              <span class="login-med-select">Login med Mit ID</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="login-med-header-btns">
+              <ul>
+                <li class="login-med-mit-id active">Login med Mit ID</li>
+                <li class="login-med-e-mail">Login med e-mail</li>
+                <li class="login-med-ind">Fortsæt uden at logge ind</li>
+              </ul>
+            </div>
+          </div>
+          <div class="login-med-footer show" id="med-mit-id">
+            <div class="container">
+              <div class="login-med-footer-area">
+                <div class="left">
+                  <form action="#">
+                    <div class="icon-input-field">
+                      <label for="input-field">
+                        <i class="fa-regular fa-at"></i>
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="e-mail"
+                        id="input-field"
+                      />
+                    </div>
+                    <div class="icon-input-field sp-20">
+                      <label for="input-field_2">
+                        <i class="fa-sharp fa-solid fa-lock-keyhole"></i>
+                      </label>
+                      <input
+                        type="E-mail"
+                        placeholder="8+ Characters required"
+                        id="input-field_2"
+                      />
+                    </div>
+                    <input class="btn sp-30" type="button" value="Login" />
+                  </form>
+                </div>
+                <div class="right">
+                  <p class="text">
+                    1.Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac .
+                  </p>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac.
+                  </p>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac .Lorem ipsum dolor sit amet consectetur. Nunc
+                    pulvinar malesuada sed enim cras tortor. Consequat arcu
+                    pellentesque enim at hac .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="login-med-footer" id="med-e-mail">
+            <div class="container">
+              <div class="login-med-footer-area">
+                <div class="left">
+                  <form action="#">
+                    <div class="icon-input-field">
+                      <label for="input-field">
+                        <i class="fa-regular fa-at"></i>
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="Logge Ind"
+                        id="input-field"
+                      />
+                    </div>
+                    <div class="icon-input-field sp-20">
+                      <label for="input-field_2">
+                        <i class="fa-sharp fa-solid fa-lock-keyhole"></i>
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="8+ Characters required"
+                        id="input-field_2"
+                      />
+                    </div>
+                    <input class="btn sp-30" type="button" value="Login" />
+                  </form>
+                </div>
+                <div class="right">
+                  <p class="text">
+                    2.Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac .
+                  </p>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac.
+                  </p>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac .Lorem ipsum dolor sit amet consectetur. Nunc
+                    pulvinar malesuada sed enim cras tortor. Consequat arcu
+                    pellentesque enim at hac .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="login-med-footer" id="med-ind">
+            <div class="container">
+              <div class="login-med-footer-area">
+                <div class="left">
+                  <form action="#">
+                    <div class="icon-input-field">
+                      <label for="input-field">
+                        <i class="fa-regular fa-at"></i>
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="MIT ID"
+                        id="input-field"
+                      />
+                    </div>
+                    <div class="icon-input-field sp-20">
+                      <label for="input-field_2">
+                        <i class="fa-sharp fa-solid fa-lock-keyhole"></i>
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="8+ Characters required"
+                        id="input-field_2"
+                      />
+                    </div>
+                    <input class="btn sp-30" type="button" value="Login" />
+                  </form>
+                </div>
+                <div class="right">
+                  <p class="text">
+                    3.Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac .
+                  </p>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac.
+                  </p>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur. Nunc pulvinar
+                    malesuada sed enim cras tortor. Consequat arcu pellentesque
+                    enim at hac .Lorem ipsum dolor sit amet consectetur. Nunc
+                    pulvinar malesuada sed enim cras tortor. Consequat arcu
+                    pellentesque enim at hac .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\  Footer Section  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-area">
+            <!-- 1 -->
+            <div class="footer-item brand-footer">
+              <a href="#"><img src="./assets/img/assurato.svg" alt="" /></a>
+            </div>
+            <!-- 2 -->
+            <div class="footer-item">
+              <ul>
+                <li><a href="#" class="link">Om os</a></li>
+                <li><a href="#" class="link">Anmeldelser</a></li>
+                <li><a href="#" class="link">Support</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Kontakt os</a></li>
+                <li><a href="#" class="link">Login</a></li>
+              </ul>
+            </div>
+            <!-- 3 -->
+            <div class="footer-item">
+              <ul>
+                <li><a href="#" class="link">Privatlivspolitik</a></li>
+                <li><a href="#" class="link">Handelsbetingelser</a></li>
+              </ul>
+            </div>
+            <!-- 4 -->
+            <div class="footer-item social-icon">
+              <ul>
+                <li><a href="#" class="link">Facebook</a></li>
+                <li><a href="#" class="link">Instagra</a></li>
+                <li><a href="#" class="link">LinkedIn</a></li>
+                <li><a href="#" class="link">TikTok</a></li>
+              </ul>
+            </div>
+            <!-- 5 -->
+            <div class="footer-item">
+              <ul>
+                <li>Assurato ApS</li>
+                <li>Svanevej 22</li>
+                <li>2400 København NV</li>
+              </ul>
+              <ul>
+                <li><a href="#" class="link">+45 12 34 56 78</a></li>
+                <li><a href="#" class="link">mail@assurato.dk</a></li>
+              </ul>
+              <ul>
+                <li><a href="#" class="link">CVR: 12345678</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- script -->
+    <script src="./login.js"></script>
+  </body>
+</html>
